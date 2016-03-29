@@ -6,22 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>Ubuntu部署Jenkins+Gradle+Android 自动化打包环境 | PentiumRabbit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Ubuntu&amp;#x90E8;&amp;#x7F72;Jenkins+Gradle+Android &amp;#x81EA;&amp;#x52A8;&amp;#x5316;&amp;#x6253;&amp;#x5305;&amp;#x73AF;&amp;#x5883;
-[TOC]
-&amp;#x524D;&amp;#x8A00;&amp;#x7531;&amp;#x4E8E;&amp;#x9879;&amp;#x76EE;&amp;#x9010;&amp;#x6E10;Gradle&amp;#x5316;&amp;#xFF0C;&amp;#x970">
+  <meta name="description" content="[TOC]
+&amp;#x524D;&amp;#x8A00;&amp;#x7531;&amp;#x4E8E;&amp;#x9879;&amp;#x76EE;&amp;#x9010;&amp;#x6E10;Gradle&amp;#x5316;&amp;#xFF0C;&amp;#x9700;&amp;#x8981;&amp;#x4E3A;&amp;#x6D4B;&amp;#x8BD5;&amp;#x540C;&amp;#x5B66;&amp;#xFF0C;&amp;#x914D;&amp;#x7F6E;&amp;#x81EA;&amp;#x52A8;&amp;#x5316;&amp;#x6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu部署Jenkins+Gradle+Android 自动化打包环境">
 <meta property="og:url" content="http://zipperary.com/2016/03/29/Ubuntu部署Jenkins-Gradle-Android-自动化打包环境/index.html">
 <meta property="og:site_name" content="PentiumRabbit">
-<meta property="og:description" content="Ubuntu&amp;#x90E8;&amp;#x7F72;Jenkins+Gradle+Android &amp;#x81EA;&amp;#x52A8;&amp;#x5316;&amp;#x6253;&amp;#x5305;&amp;#x73AF;&amp;#x5883;
-[TOC]
-&amp;#x524D;&amp;#x8A00;&amp;#x7531;&amp;#x4E8E;&amp;#x9879;&amp;#x76EE;&amp;#x9010;&amp;#x6E10;Gradle&amp;#x5316;&amp;#xFF0C;&amp;#x970">
-<meta property="og:updated_time" content="2016-03-29T08:19:56.076Z">
+<meta property="og:description" content="[TOC]
+&amp;#x524D;&amp;#x8A00;&amp;#x7531;&amp;#x4E8E;&amp;#x9879;&amp;#x76EE;&amp;#x9010;&amp;#x6E10;Gradle&amp;#x5316;&amp;#xFF0C;&amp;#x9700;&amp;#x8981;&amp;#x4E3A;&amp;#x6D4B;&amp;#x8BD5;&amp;#x540C;&amp;#x5B66;&amp;#xFF0C;&amp;#x914D;&amp;#x7F6E;&amp;#x81EA;&amp;#x52A8;&amp;#x5316;&amp;#x6">
+<meta property="og:updated_time" content="2016-03-29T09:47:42.322Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu部署Jenkins+Gradle+Android 自动化打包环境">
-<meta name="twitter:description" content="Ubuntu&amp;#x90E8;&amp;#x7F72;Jenkins+Gradle+Android &amp;#x81EA;&amp;#x52A8;&amp;#x5316;&amp;#x6253;&amp;#x5305;&amp;#x73AF;&amp;#x5883;
-[TOC]
-&amp;#x524D;&amp;#x8A00;&amp;#x7531;&amp;#x4E8E;&amp;#x9879;&amp;#x76EE;&amp;#x9010;&amp;#x6E10;Gradle&amp;#x5316;&amp;#xFF0C;&amp;#x970">
+<meta name="twitter:description" content="[TOC]
+&amp;#x524D;&amp;#x8A00;&amp;#x7531;&amp;#x4E8E;&amp;#x9879;&amp;#x76EE;&amp;#x9010;&amp;#x6E10;Gradle&amp;#x5316;&amp;#xFF0C;&amp;#x9700;&amp;#x8981;&amp;#x4E3A;&amp;#x6D4B;&amp;#x8BD5;&amp;#x540C;&amp;#x5B66;&amp;#xFF0C;&amp;#x914D;&amp;#x7F6E;&amp;#x81EA;&amp;#x52A8;&amp;#x5316;&amp;#x6">
   
     <link rel="alternative" href="/atom.xml" title="PentiumRabbit" type="application/atom+xml">
   
@@ -219,8 +216,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Ubuntu&#x90E8;&#x7F72;Jenkins-Gradle-Android-&#x81EA;&#x52A8;&#x5316;&#x6253;&#x5305;&#x73AF;&#x5883;"><a href="#Ubuntu&#x90E8;&#x7F72;Jenkins-Gradle-Android-&#x81EA;&#x52A8;&#x5316;&#x6253;&#x5305;&#x73AF;&#x5883;" class="headerlink" title="Ubuntu&#x90E8;&#x7F72;Jenkins+Gradle+Android &#x81EA;&#x52A8;&#x5316;&#x6253;&#x5305;&#x73AF;&#x5883;"></a>Ubuntu&#x90E8;&#x7F72;Jenkins+Gradle+Android &#x81EA;&#x52A8;&#x5316;&#x6253;&#x5305;&#x73AF;&#x5883;</h1><hr>
-<p>[TOC]</p>
+        <p>[TOC]</p>
 <h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x7531;&#x4E8E;&#x9879;&#x76EE;&#x9010;&#x6E10;Gradle&#x5316;&#xFF0C;&#x9700;&#x8981;&#x4E3A;&#x6D4B;&#x8BD5;&#x540C;&#x5B66;&#xFF0C;&#x914D;&#x7F6E;&#x81EA;&#x52A8;&#x5316;&#x6253;&#x5305;&#x73AF;&#x5883;</p>
 <h2 id="&#x76F8;&#x5173;&#x8D44;&#x6E90;"><a href="#&#x76F8;&#x5173;&#x8D44;&#x6E90;" class="headerlink" title="&#x76F8;&#x5173;&#x8D44;&#x6E90;"></a>&#x76F8;&#x5173;&#x8D44;&#x6E90;</h2><ul>
 <li><p>Ubuntu Server(&#x6CA1;&#x9009;&#x7528;Centos&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x5BF9;bantu&#x5C5E;&#x6027;)</p>
