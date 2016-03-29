@@ -72,7 +72,7 @@ Gitlab
 		</hgroup>
 
 		
-		<p class="header-subtitle">Android工程师</p>
+		<p class="header-subtitle">一个轻微强迫症&amp;半完美主义者的地盘</p>
 		
 
 		
@@ -110,7 +110,7 @@ Gitlab
 						<li>Links</li>
 						
 						
-						<li>About</li>
+						<li>Über</li>
 						
 					</ul>
 				</div>
@@ -202,7 +202,7 @@ Gitlab
 			  <h1 class="header-author">赵儒阳</h1>
 			</hgroup>
 			
-			<p class="header-subtitle">Android工程师</p>
+			<p class="header-subtitle">一个轻微强迫症&amp;半完美主义者的地盘</p>
 			
 			<nav class="header-menu">
 				<ul>
@@ -270,49 +270,21 @@ Gitlab
 </blockquote>
 </li>
 </ul>
-<h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre><code class="shell">sudo dpkg -i ××××.deb
-</code></pre>
+<h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i ××××.deb</span><br></pre></td></tr></table></figure>
 <h3 id="Gitlab-配置-1"><a href="#Gitlab-配置-1" class="headerlink" title="Gitlab 配置"></a>Gitlab 配置</h3><ul>
-<li><p>配置</p>
-<pre><code class="shell">  sudo vim /etc/gitlab/gitlab.rb
-</code></pre>
-<pre><code class="ruby">  # 配置url，如果端口号改变的话，后面要加上端口号，否则认证邮件找不到网页
-  external_url &#39;http://192.168.85.96:8088&#39; 
-  # 配置邮箱，用于通知
-  gitlab_rails[&#39;gitlab_email_enabled&#39;] = true
-  gitlab_rails[&#39;gitlab_email_from&#39;] = &#39;android@baofeng.com&#39;
-  gitlab_rails[&#39;gitlab_email_display_name&#39;] = &#39;GitLab&#39;
-  gitlab_rails[&#39;gitlab_email_reply_to&#39;] = &#39;android@baofeng.com&#39;
-
-  gitlab_rails[&#39;smtp_enable&#39;] = true
-  gitlab_rails[&#39;smtp_address&#39;] = &quot;mail.baofeng.com&quot;
-  gitlab_rails[&#39;smtp_port&#39;] = 25
-  gitlab_rails[&#39;smtp_user_name&#39;] = &quot;android@baofeng.com&quot;
-  gitlab_rails[&#39;smtp_password&#39;] = &quot;××××&quot;
-  gitlab_rails[&#39;smtp_domain&#39;] = &quot;mail.baofeng.com&quot;
-  gitlab_rails[&#39;smtp_authentication&#39;] = &quot;login&quot;
-  gitlab_rails[&#39;smtp_enable_starttls_auto&#39;] = true
-  gitlab_rails[&#39;smtp_tls&#39;] = false
-  gitlab_rails[&#39;smtp_openssl_verify_mode&#39;] = &#39;none&#39; 
-  # 设置服务器反向的代理，别和tomcat冲突就行，功能没有使用
-  unicorn[&#39;port&#39;] = 8085
-  ## 设置监听的端口号
-  nginx[&#39;listen_addresses&#39;] = [&#39;192.168.85.96&#39;]
-  nginx[&#39;listen_port&#39;] = 8088
-</code></pre>
+<li>配置  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/gitlab/gitlab.rb</span><br></pre></td></tr></table></figure>
 </li>
+</ul>
+<pre><code><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 配置url，如果端口号改变的话，后面要加上端口号，否则认证邮件找不到网页</span></span><br><span class="line">external_url <span class="string">'http://192.168.85.96:8088'</span> </span><br><span class="line"><span class="comment"># 配置邮箱，用于通知</span></span><br><span class="line">gitlab_rails[<span class="string">'gitlab_email_enabled'</span>] = <span class="keyword">true</span></span><br><span class="line">gitlab_rails[<span class="string">'gitlab_email_from'</span>] = <span class="string">'android@baofeng.com'</span></span><br><span class="line">gitlab_rails[<span class="string">'gitlab_email_display_name'</span>] = <span class="string">'GitLab'</span></span><br><span class="line">gitlab_rails[<span class="string">'gitlab_email_reply_to'</span>] = <span class="string">'android@baofeng.com'</span></span><br><span class="line"></span><br><span class="line">gitlab_rails[<span class="string">'smtp_enable'</span>] = <span class="keyword">true</span></span><br><span class="line">gitlab_rails[<span class="string">'smtp_address'</span>] = <span class="string">"mail.baofeng.com"</span></span><br><span class="line">gitlab_rails[<span class="string">'smtp_port'</span>] = <span class="number">25</span></span><br><span class="line">gitlab_rails[<span class="string">'smtp_user_name'</span>] = <span class="string">"android@baofeng.com"</span></span><br><span class="line">gitlab_rails[<span class="string">'smtp_password'</span>] = <span class="string">"××××"</span></span><br><span class="line">gitlab_rails[<span class="string">'smtp_domain'</span>] = <span class="string">"mail.baofeng.com"</span></span><br><span class="line">gitlab_rails[<span class="string">'smtp_authentication'</span>] = <span class="string">"login"</span></span><br><span class="line">gitlab_rails[<span class="string">'smtp_enable_starttls_auto'</span>] = <span class="keyword">true</span></span><br><span class="line">gitlab_rails[<span class="string">'smtp_tls'</span>] = <span class="keyword">false</span></span><br><span class="line">gitlab_rails[<span class="string">'smtp_openssl_verify_mode'</span>] = <span class="string">'none'</span> </span><br><span class="line"><span class="comment"># 设置服务器反向的代理，别和tomcat冲突就行，功能没有使用</span></span><br><span class="line">unicorn[<span class="string">'port'</span>] = <span class="number">8085</span></span><br><span class="line"><span class="comment">## 设置监听的端口号</span></span><br><span class="line">nginx[<span class="string">'listen_addresses'</span>] = [<span class="string">'192.168.85.96'</span>]</span><br><span class="line">nginx[<span class="string">'listen_port'</span>] = <span class="number">8088</span></span><br></pre></td></tr></table></figure>
+</code></pre><ul>
 <li><p>执行下面的命令使得变更生效。</p>
-<pre><code class="shell">  sudo gitlab-ctl reconfigure
-</code></pre>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl reconfigure</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>有时候你还需要重启postfix（可选） </p>
-<pre><code class="shell">  sudo /etc/init.d/postfix restart
-</code></pre>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.d/postfix restart</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>初次安装密码</p>
-<pre><code class="shell">  Username: root
-  Password: 5iveL!fe
-</code></pre>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Username: root</span><br><span class="line">Password: 5iveL!fe</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>如果遇到数据库升级问题，重装的话需要删除</p>
 <ul>
@@ -329,62 +301,36 @@ Gitlab
 <li><p><strong><a href="http://doc.gitlab.com/ce/ci/runners/README.html" target="_blank" rel="external">官网文档</a></strong></p>
 </li>
 <li><p>如果运行时，发现权限问题，可以先获取权限，脚本如下：</p>
-<pre><code class="script">  before_script:  
-    - export ANDROID_HOME=&quot;/home/android/work/android-sdk-linux&quot;
-
-  dev:  
-    script:
-      - chmod 777 ./gradlew
-      - ./gradlew clean assembleRelease --stacktrace --debug
-</code></pre>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">before_script:  </span><br><span class="line">  - export ANDROID_HOME=&quot;/home/android/work/android-sdk-linux&quot;</span><br><span class="line"></span><br><span class="line">dev:  </span><br><span class="line">  script:</span><br><span class="line">    - chmod 777 ./gradlew</span><br><span class="line">    - ./gradlew clean assembleRelease --stacktrace --debug</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="修改仓库位置（可以不修改）"><a href="#修改仓库位置（可以不修改）" class="headerlink" title="修改仓库位置（可以不修改）"></a>修改仓库位置（可以不修改）</h3><ul>
-<li><p>步骤</p>
-<pre><code class="shell">  mkdir -p /mnt/application/gitlab/git-data
-  sudo vi /etc/gitlab/gitlab.rb
-</code></pre>
-<pre><code class="ruby">  git_data_dir &quot;/mnt/application/gitlab/git-data&quot;
-</code></pre>
-<pre><code class="shell">  gitlab sudo gitlab-ctl reconfigure
-</code></pre>
+<li>步骤  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /mnt/application/gitlab/git-data</span><br><span class="line">sudo vi /etc/gitlab/gitlab.rb</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong><a href="https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md#the-runners-section" target="_blank" rel="external">配置参看</a></strong></p>
-</li>
+</ul>
+<pre><code><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git_data_dir <span class="string">"/mnt/application/gitlab/git-data"</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitlab sudo gitlab-ctl reconfigure</span><br></pre></td></tr></table></figure>
+</code></pre><ul>
+<li><strong><a href="https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md#the-runners-section" target="_blank" rel="external">配置参看</a></strong></li>
 </ul>
 <h2 id="Gitlab使用"><a href="#Gitlab使用" class="headerlink" title="Gitlab使用"></a>Gitlab使用</h2><h3 id="生成SSH-KEY"><a href="#生成SSH-KEY" class="headerlink" title="生成SSH KEY"></a><span id="ssh_use">生成SSH KEY</span></h3><ul>
 <li><p>生成</p>
-<pre><code class="shell">  git config --global user.name &quot;username&quot;
-  git config --global user.email &quot;email&quot;
-  cd ~/.ssh
-  $ssh-keygen -t rsa -C &quot;email&quot;
-</code></pre>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;email&quot;</span><br><span class="line">cd ~/.ssh</span><br><span class="line">$ssh-keygen -t rsa -C &quot;email&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 <blockquote>
 <p>不用填写密码，把id_rsa.pub里面的东西放在gitlab里</p>
 </blockquote>
-</li>
+<ul>
 <li><p>测试</p>
-<pre><code class="shell">  ssh -T git@github.com
-</code></pre>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>多个SSH配置</p>
 <p>  新建文件config</p>
-<pre><code class="shell">  cd ~/.ssh
-  vim config
-</code></pre>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">vim config</span><br></pre></td></tr></table></figure>
 <p>  配置</p>
-<pre><code class="ruby">  # gitlab
-  #Host 192.168.85.96
-  #   HostName 192.168.85.96
-  #   PreferredAuthentications publickey
-  #   IdentityFile ~/.ssh/id_rsa
-
-  #  chinaos
-  Host git.oschina.net
-  HostName git.oschina.net
-  PreferredAuthentications publickey
-  IdentityFile ~/.ssh/chinaos
-</code></pre>
+  <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitlab</span></span><br><span class="line"><span class="comment">#Host 192.168.85.96</span></span><br><span class="line"><span class="comment">#   HostName 192.168.85.96</span></span><br><span class="line"><span class="comment">#   PreferredAuthentications publickey</span></span><br><span class="line"><span class="comment">#   IdentityFile ~/.ssh/id_rsa</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#  chinaos</span></span><br><span class="line">Host git.oschina.net</span><br><span class="line">HostName git.oschina.net</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/chinaos</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="管理者"><a href="#管理者" class="headerlink" title="管理者"></a>管理者</h3><ul>
@@ -416,8 +362,7 @@ Gitlab
 <li>由于主枝代码受保护，所以使用者必须经过这两种形式开发代码,当开发者提交代码时，必须经过主枝管理员同意，以达到review效果</li>
 <li>区别：fork出来的代码位于自己的仓库，其实可以看作一个分支，只是位置不同，所有者不同</li>
 <li><p>如果fork出来的代码，要同步原库的代码：</p>
-<pre><code class="shell">  git remote add upstream git@192.168.85.96:android/TextAndroid.git
-</code></pre>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream git@192.168.85.96:android/TextAndroid.git</span><br></pre></td></tr></table></figure>
 <p>然后就可以在studio中，Git-&gt;pull-&gt;选择对应的Remote-&gt;pull 下拉下来，然后合并了，合并后需要push到自己的仓库里，然后在gitlab发起Merge Requests<br>Projects-&gt;点击相应的项目-&gt;右侧Fork</p>
 </li>
 </ul>
@@ -436,22 +381,17 @@ Gitlab
 </ul>
 <h2 id="Git-使用"><a href="#Git-使用" class="headerlink" title="Git 使用"></a><span id="git_use">Git 使用</span></h2><ol>
 <li><p>初始化代码仓库（repository）（在代码文件夹中）</p>
-<pre><code class="shell"> git init  
- git add .
- git commit -m &quot;评论&quot;
- git remote add origin http://git.oschina.net/yourname/helloworld.git
- git push origin master
-</code></pre>
-<blockquote>
-<p>问题</p>
-</blockquote>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init  </span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;评论&quot;</span><br><span class="line">git remote add origin http://git.oschina.net/yourname/helloworld.git</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
+<blockquote>
+<p>问题</p>
 <ul>
 <li>remote: Not Found:需要gitlab上创建空项目</li>
 <li>![rejected] master -&gt; master (fetch first) ：-&gt; git fetch</li>
 <li>![rejected] master -&gt; master (non-fast-forward) : -&gt;git pull origin master</li>
 </ul>
+</blockquote>
 <ol>
 <li>命令</li>
 </ol>
@@ -502,12 +442,7 @@ Gitlab
 </ul>
 <h2 id="Gitlab-日常维护"><a href="#Gitlab-日常维护" class="headerlink" title="Gitlab 日常维护"></a><a href="http://www.tuicool.com/articles/mUzyAr" target="_blank" rel="external">Gitlab 日常维护</a></h2><h2 id="SVN转Git"><a href="#SVN转Git" class="headerlink" title="SVN转Git"></a>SVN转Git</h2><h3 id="使用svn2git"><a href="#使用svn2git" class="headerlink" title="使用svn2git"></a>使用svn2git</h3><ul>
 <li><p>转化</p>
-<pre><code class="shell">sudo apt-get install git-core git-svn ruby
-gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/
-gem sources -l
-sudo gem install svn2git
-svn2git http://192.168.200.222/svn/storm_wireless/android_online/trunk/client/BaofengAndroid/ --notrunk --nobranches --notags --username zhaoruyang
-</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git-core git-svn ruby</span><br><span class="line">gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/</span><br><span class="line">gem sources -l</span><br><span class="line">sudo gem install svn2git</span><br><span class="line">svn2git http://192.168.200.222/svn/storm_wireless/android_online/trunk/client/BaofengAndroid/ --notrunk --nobranches --notags --username zhaoruyang</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Push</p>
 <blockquote>
