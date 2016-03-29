@@ -72,7 +72,7 @@
 						<li>Tags</li>
 						
 						
-						<li>About</li>
+						<li>Über</li>
 						
 					</ul>
 				</div>
@@ -181,11 +181,11 @@
 
       <div class="body-wrap">
   
-    <article id="post-Gitlab-配置与安装，操作" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-vim" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/29/Gitlab-配置与安装，操作/" class="article-date">
-  	<time datetime="2016-03-29T07:34:08.000Z" itemprop="datePublished">3月 29 2016</time>
+      <a href="/2016/03/29/vim/" class="article-date">
+  	<time datetime="2016-03-29T10:46:51.731Z" itemprop="datePublished">3月 29 2016</time>
 </a>
     </div>
   
@@ -194,151 +194,268 @@
       <input type="hidden" class="isFancy" />
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/29/Gitlab-配置与安装，操作/">Gitlab 配置与安装，操作</a>
-    </h1>
-  
-
-      </header>
+    <div class="article-entry" itemprop="articleBody">
       
+        <h1 id="Vim-&#x914D;&#x7F6E;"><a href="#Vim-&#x914D;&#x7F6E;" class="headerlink" title="Vim &#x914D;&#x7F6E;"></a>Vim &#x914D;&#x7F6E;</h1><p>[TOC]</p>
+<h2 id="&#x5B89;&#x88C5;"><a href="#&#x5B89;&#x88C5;" class="headerlink" title="&#x5B89;&#x88C5;"></a>&#x5B89;&#x88C5;</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install vim-gtk</span><br></pre></td></tr></table></figure>
+<h2 id="&#x64CD;&#x4F5C;"><a href="#&#x64CD;&#x4F5C;" class="headerlink" title="&#x64CD;&#x4F5C;"></a>&#x64CD;&#x4F5C;</h2><h3 id="&#x5FEB;&#x6377;&#x952E;"><a href="#&#x5FEB;&#x6377;&#x952E;" class="headerlink" title="&#x5FEB;&#x6377;&#x952E;"></a>&#x5FEB;&#x6377;&#x952E;</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">Key</th>
+<th style="text-align:left">&#x529F;&#x80FD;      </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ggDG</td>
+<td style="text-align:left">&#x5168;&#x90E8;&#x5220;&#x9664; </td>
+</tr>
+<tr>
+<td style="text-align:left">gg =G</td>
+<td style="text-align:left">&#x5BF9;&#x9F50;</td>
+</tr>
+<tr>
+<td style="text-align:left">ctrl+F,B</td>
+<td style="text-align:left">&#x7FFB;&#x9875;</td>
+</tr>
+<tr>
+<td style="text-align:left">ctrl+T,]</td>
+<td style="text-align:left">&#x8FDB;&#x5165;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD4;&#x56DE;</td>
+</tr>
+<tr>
+<td style="text-align:left">ctrl+i,o</td>
+<td style="text-align:left">&#x524D;&#x8FDB;&#xFF0C;&#x540E;&#x9000;</td>
+</tr>
+<tr>
+<td style="text-align:left">ctrl+WW</td>
+<td style="text-align:left">&#x5207;&#x6362;&#x7A97;&#x53E3;</td>
+</tr>
+<tr>
+<td style="text-align:left">:TListTo</td>
+<td style="text-align:left">&#x6253;&#x5F00;&#x65B9;&#x6CD5;&#x7A97;&#x53E3;</td>
+</tr>
+<tr>
+<td style="text-align:left">:reg</td>
+<td style="text-align:left">VIM&#x4E2D;&#x6709;&#x5F88;&#x591A;&#x7684;&#x5F88;&#x591A;&#x7684;&#x5BC4;&#x5B58;&#x5668;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x201C;+y</td>
+<td style="text-align:left">VIM&#x5185;&#x7684;&#x4E1C;&#x897F;&#x62F7;&#x8D1D;&#x5230;&#x5916;&#x9762;&#x53BB;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x201C;+p</td>
+<td style="text-align:left">&#x628A;&#x9009;&#x5B9A;&#x7684;&#x5185;&#x5BB9; yank&#x5230; &#x5BC4;&#x5B58;&#x5668; &#x3010; &#x201C;+ &#x3011; &#x4E2D;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x65B9;&#x6CD5;"><a href="#&#x65B9;&#x6CD5;" class="headerlink" title="&#x65B9;&#x6CD5;"></a>&#x65B9;&#x6CD5;</h3><p> VIM&#x4E2D;&#x5728;&#x8F93;&#x5165;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C; &#x6309;Shift+Insert&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x628A;&#x7CFB;&#x7EDF;&#x526A;&#x5207;&#x7248;&#x91CC;&#x7684;&#x5185;&#x5BB9;&#x62F7;&#x8D1D;&#x5230;VIM&#x4E2D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5BC4;&#x5B58;&#x5668; &#x3010; &#x201C;+ &#x3011; &#x91CC;&#x7684;&#x4E1C;&#x897F;&#x3002;</p>
+<h2 id="&#x914D;&#x7F6E;"><a href="#&#x914D;&#x7F6E;" class="headerlink" title="&#x914D;&#x7F6E;"></a>&#x914D;&#x7F6E;</h2><h3 id="&#x5B89;&#x88C5;Vundle&#xFF08;&#x63D2;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#xFF09;"><a href="#&#x5B89;&#x88C5;Vundle&#xFF08;&#x63D2;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#xFF09;" class="headerlink" title="&#x5B89;&#x88C5;Vundle&#xFF08;&#x63D2;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#xFF09;"></a>&#x5B89;&#x88C5;Vundle&#xFF08;&#x63D2;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#xFF09;</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim</span><br></pre></td></tr></table></figure>
+<h3 id="&#x914D;&#x7F6E;-vimrc"><a href="#&#x914D;&#x7F6E;-vimrc" class="headerlink" title="&#x914D;&#x7F6E;.vimrc"></a>&#x914D;&#x7F6E;.vimrc</h3><p><a href="/computerConfig/.vimrc">&#x914D;&#x7F6E;&#x6587;&#x4EF6;</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-ubuntu" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/29/ubuntu/" class="article-date">
+  	<time datetime="2016-03-29T10:46:51.731Z" itemprop="datePublished">3月 29 2016</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>[TOC]</p>
-<h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x9879;&#x76EE;&#x7684;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;&#xFF0C;&#x6446;&#x8131;&#x8FC7;&#x65E7;&#x7684;&#x7BA1;&#x7406;&#x6761;&#x4EF6;&#xFF0C;&#x5B9E;&#x73B0;&#x4E00;&#x4F53;&#x5316;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x7684;&#x7BA1;&#x7406;&#xFF0C;&#x4EE5;&#x53CA;&#x4EE3;&#x7801;review&#x5DE5;&#x4F5C;</p>
-<h2 id="&#x7CFB;&#x7EDF;&#x73AF;&#x5883;"><a href="#&#x7CFB;&#x7EDF;&#x73AF;&#x5883;" class="headerlink" title="&#x7CFB;&#x7EDF;&#x73AF;&#x5883;"></a>&#x7CFB;&#x7EDF;&#x73AF;&#x5883;</h2><ul>
-<li>Ubuntu Server 14.04 LTS</li>
-<li>GitLab CE Omnibus package</li>
-</ul>
-<h2 id="&#x76F8;&#x5173;&#x8D44;&#x6E90;"><a href="#&#x76F8;&#x5173;&#x8D44;&#x6E90;" class="headerlink" title="&#x76F8;&#x5173;&#x8D44;&#x6E90;"></a>&#x76F8;&#x5173;&#x8D44;&#x6E90;</h2><ul>
-<li><strong><a href="http://www.gitlab.cc/downloads/#ubuntu1404" target="_blank" rel="external">Gitlab</a></strong><blockquote>
-<p>&#x7531;&#x4E8E;&#x56FD;&#x5185;&#x5899;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x65B9;&#x6CD5;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#xFF0C;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x5148;&#x4E0B;&#x8F7D;deb&#x5305;&#xFF0C;&#x518D;&#x5B89;&#x88C5;</p>
-</blockquote>
-</li>
-</ul>
-<ol>
-<li>select and download the package manually </li>
-<li>&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684;&#x5B89;&#x88C5;&#x5305;&#xFF08;&#x6211;&#x4EEC;&#x662F;ubuntu lts &#x6545;&#x9009;&#x62E9;ubuntu/trusty &#x7684;deb&#x5305;&#x5373;&#x53EF;&#xFF0C;&#x4E0B;&#x8F7D;&#x662F;&#x4E2A;&#x6F2B;&#x957F;&#x7684;&#x8FC7;&#x7A0B;&#xFF09;</li>
-</ol>
-<ul>
-<li><strong><a href="https://packages.gitlab.com/runner/gitlab-ci-multi-runner?filter=debs&amp;page=2" target="_blank" rel="external">gitlab-ci-multi-runner</a></strong><blockquote>
-<p>&#x81EA;&#x52A8;&#x5316;&#x6784;&#x5EFA;&#x5DE5;&#x5177;</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="&#x73AF;&#x5883;&#x914D;&#x7F6E;"><a href="#&#x73AF;&#x5883;&#x914D;&#x7F6E;" class="headerlink" title="&#x73AF;&#x5883;&#x914D;&#x7F6E;"></a>&#x73AF;&#x5883;&#x914D;&#x7F6E;</h2><h3 id="&#x5B89;&#x88C5;"><a href="#&#x5B89;&#x88C5;" class="headerlink" title="&#x5B89;&#x88C5;"></a>&#x5B89;&#x88C5;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i &#xD7;&#xD7;&#xD7;&#xD7;.deb</span><br></pre></td></tr></table></figure>
-<h3 id="Gitlab-&#x914D;&#x7F6E;"><a href="#Gitlab-&#x914D;&#x7F6E;" class="headerlink" title="Gitlab &#x914D;&#x7F6E;"></a>Gitlab &#x914D;&#x7F6E;</h3><ul>
-<li>&#x914D;&#x7F6E;  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/gitlab/gitlab.rb</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<pre><code><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># &#x914D;&#x7F6E;url&#xFF0C;&#x5982;&#x679C;&#x7AEF;&#x53E3;&#x53F7;&#x6539;&#x53D8;&#x7684;&#x8BDD;&#xFF0C;&#x540E;&#x9762;&#x8981;&#x52A0;&#x4E0A;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;&#x5426;&#x5219;&#x8BA4;&#x8BC1;&#x90AE;&#x4EF6;&#x627E;&#x4E0D;&#x5230;&#x7F51;&#x9875;</span></span><br><span class="line">external_url <span class="string">&apos;http://192.168.85.96:8088&apos;</span> </span><br><span class="line"><span class="comment"># &#x914D;&#x7F6E;&#x90AE;&#x7BB1;&#xFF0C;&#x7528;&#x4E8E;&#x901A;&#x77E5;</span></span><br><span class="line">gitlab_rails[<span class="string">&apos;gitlab_email_enabled&apos;</span>] = <span class="keyword">true</span></span><br><span class="line">gitlab_rails[<span class="string">&apos;gitlab_email_from&apos;</span>] = <span class="string">&apos;android@baofeng.com&apos;</span></span><br><span class="line">gitlab_rails[<span class="string">&apos;gitlab_email_display_name&apos;</span>] = <span class="string">&apos;GitLab&apos;</span></span><br><span class="line">gitlab_rails[<span class="string">&apos;gitlab_email_reply_to&apos;</span>] = <span class="string">&apos;android@baofeng.com&apos;</span></span><br><span class="line"></span><br><span class="line">gitlab_rails[<span class="string">&apos;smtp_enable&apos;</span>] = <span class="keyword">true</span></span><br><span class="line">gitlab_rails[<span class="string">&apos;smtp_address&apos;</span>] = <span class="string">&quot;mail.baofeng.com&quot;</span></span><br><span class="line">gitlab_rails[<span class="string">&apos;smtp_port&apos;</span>] = <span class="number">25</span></span><br><span class="line">gitlab_rails[<span class="string">&apos;smtp_user_name&apos;</span>] = <span class="string">&quot;android@baofeng.com&quot;</span></span><br><span class="line">gitlab_rails[<span class="string">&apos;smtp_password&apos;</span>] = <span class="string">&quot;&#xD7;&#xD7;&#xD7;&#xD7;&quot;</span></span><br><span class="line">gitlab_rails[<span class="string">&apos;smtp_domain&apos;</span>] = <span class="string">&quot;mail.baofeng.com&quot;</span></span><br><span class="line">gitlab_rails[<span class="string">&apos;smtp_authentication&apos;</span>] = <span class="string">&quot;login&quot;</span></span><br><span class="line">gitlab_rails[<span class="string">&apos;smtp_enable_starttls_auto&apos;</span>] = <span class="keyword">true</span></span><br><span class="line">gitlab_rails[<span class="string">&apos;smtp_tls&apos;</span>] = <span class="keyword">false</span></span><br><span class="line">gitlab_rails[<span class="string">&apos;smtp_openssl_verify_mode&apos;</span>] = <span class="string">&apos;none&apos;</span> </span><br><span class="line"><span class="comment"># &#x8BBE;&#x7F6E;&#x670D;&#x52A1;&#x5668;&#x53CD;&#x5411;&#x7684;&#x4EE3;&#x7406;&#xFF0C;&#x522B;&#x548C;tomcat&#x51B2;&#x7A81;&#x5C31;&#x884C;&#xFF0C;&#x529F;&#x80FD;&#x6CA1;&#x6709;&#x4F7F;&#x7528;</span></span><br><span class="line">unicorn[<span class="string">&apos;port&apos;</span>] = <span class="number">8085</span></span><br><span class="line"><span class="comment">## &#x8BBE;&#x7F6E;&#x76D1;&#x542C;&#x7684;&#x7AEF;&#x53E3;&#x53F7;</span></span><br><span class="line">nginx[<span class="string">&apos;listen_addresses&apos;</span>] = [<span class="string">&apos;192.168.85.96&apos;</span>]</span><br><span class="line">nginx[<span class="string">&apos;listen_port&apos;</span>] = <span class="number">8088</span></span><br></pre></td></tr></table></figure>
-</code></pre><ul>
-<li><p>&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4F7F;&#x5F97;&#x53D8;&#x66F4;&#x751F;&#x6548;&#x3002;</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl reconfigure</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>&#x6709;&#x65F6;&#x5019;&#x4F60;&#x8FD8;&#x9700;&#x8981;&#x91CD;&#x542F;postfix&#xFF08;&#x53EF;&#x9009;&#xFF09; </p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.d/postfix restart</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>&#x521D;&#x6B21;&#x5B89;&#x88C5;&#x5BC6;&#x7801;</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Username: root</span><br><span class="line">Password: 5iveL!fe</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>&#x5982;&#x679C;&#x9047;&#x5230;&#x6570;&#x636E;&#x5E93;&#x5347;&#x7EA7;&#x95EE;&#x9898;&#xFF0C;&#x91CD;&#x88C5;&#x7684;&#x8BDD;&#x9700;&#x8981;&#x5220;&#x9664;</p>
-<ul>
-<li>/var/opt/gitlab</li>
-<li>/opt/gitlab</li>
-<li>/etc/gitlab/</li>
-</ul>
-</li>
-<li><p><strong><a href="http://doc.gitlab.com/" target="_blank" rel="external">&#x5B98;&#x7F51;&#x914D;&#x7F6E;&#x6587;&#x6863;</a></strong></p>
-</li>
-</ul>
-<h3 id="Runners-&#x914D;&#x7F6E;&#xFF08;Setting-Up-Android-Builds-in-Gitlab-CI&#xFF09;"><a href="#Runners-&#x914D;&#x7F6E;&#xFF08;Setting-Up-Android-Builds-in-Gitlab-CI&#xFF09;" class="headerlink" title="Runners &#x914D;&#x7F6E;&#xFF08;Setting Up Android Builds in Gitlab CI&#xFF09;"></a>Runners &#x914D;&#x7F6E;&#xFF08;Setting Up Android Builds in Gitlab CI&#xFF09;</h3><ul>
-<li><strong><a href="http://www.greysonparrelli.com/setting-up-android-builds-in-gitlab-ci/" target="_blank" rel="external">&#x56FD;&#x5916;&#x535A;&#x5BA2;</a></strong></li>
-<li><p><strong><a href="http://doc.gitlab.com/ce/ci/runners/README.html" target="_blank" rel="external">&#x5B98;&#x7F51;&#x6587;&#x6863;</a></strong></p>
-</li>
-<li><p>&#x5982;&#x679C;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x53D1;&#x73B0;&#x6743;&#x9650;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x83B7;&#x53D6;&#x6743;&#x9650;&#xFF0C;&#x811A;&#x672C;&#x5982;&#x4E0B;&#xFF1A;</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">before_script:  </span><br><span class="line">  - export ANDROID_HOME=&quot;/home/android/work/android-sdk-linux&quot;</span><br><span class="line"></span><br><span class="line">dev:  </span><br><span class="line">  script:</span><br><span class="line">    - chmod 777 ./gradlew</span><br><span class="line">    - ./gradlew clean assembleRelease --stacktrace --debug</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="&#x4FEE;&#x6539;&#x4ED3;&#x5E93;&#x4F4D;&#x7F6E;&#xFF08;&#x53EF;&#x4EE5;&#x4E0D;&#x4FEE;&#x6539;&#xFF09;"><a href="#&#x4FEE;&#x6539;&#x4ED3;&#x5E93;&#x4F4D;&#x7F6E;&#xFF08;&#x53EF;&#x4EE5;&#x4E0D;&#x4FEE;&#x6539;&#xFF09;" class="headerlink" title="&#x4FEE;&#x6539;&#x4ED3;&#x5E93;&#x4F4D;&#x7F6E;&#xFF08;&#x53EF;&#x4EE5;&#x4E0D;&#x4FEE;&#x6539;&#xFF09;"></a>&#x4FEE;&#x6539;&#x4ED3;&#x5E93;&#x4F4D;&#x7F6E;&#xFF08;&#x53EF;&#x4EE5;&#x4E0D;&#x4FEE;&#x6539;&#xFF09;</h3><ul>
-<li>&#x6B65;&#x9AA4;  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /mnt/application/gitlab/git-data</span><br><span class="line">sudo vi /etc/gitlab/gitlab.rb</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<pre><code><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git_data_dir <span class="string">&quot;/mnt/application/gitlab/git-data&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h1><p>[TOC]</p>
+<h2 id="&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;"><a href="#&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;" class="headerlink" title="&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;"></a>&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;</h2><pre><code>Ubuntu&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E0B;&#x5C06;&#x9ED8;&#x8BA4;&#x8BED;&#x8A00;&#x6539;&#x4E3A;&#x82F1;&#x8BED;
+/etc/default/locale &#x6587;&#x4EF6;
+&#x5C06;&#x539F;&#x6765;&#x7684;&#x914D;&#x7F6E;&#x5185;&#x5BB9;&#x4FEE;&#x6539;&#x4E3A;
+LANG=&#x201D;en_US.UTF-8&#x2033;
+LANGUAGE=&#x201D;en_US:en&#x201D;
+&#x518D;&#x5728;&#x7EC8;&#x7AEF;&#x4E0B;&#x8FD0;&#x884C;&#xFF1A;
+locale-gen -en_US:en
+&#x6CE8;&#x9500;&#x6216;&#x91CD;&#x542F;&#x540E;&#xFF0C;&#x5373;&#x53EF;&#x6062;&#x590D;&#x4E3A;&#x82F1;&#x6587;&#x7684;&#x8BED;&#x8A00;&#x73AF;&#x5883;&#x3002;
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitlab sudo gitlab-ctl reconfigure</span><br></pre></td></tr></table></figure>
-</code></pre><ul>
-<li><strong><a href="https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md#the-runners-section" target="_blank" rel="external">&#x914D;&#x7F6E;&#x53C2;&#x770B;</a></strong></li>
+ubuntu sublime &#x5FEB;&#x6377;&#x65B9;&#x5F0F; &#x5F3A;&#x8C03;&#xFF1A; &quot;Sublime Text 2&quot;  &#x5FC5;&#x987B;&#x52A0;&#x4E0A;&#x5F15;&#x53F7;
+</code></pre><h2 id="&#x8F6F;&#x4EF6;"><a href="#&#x8F6F;&#x4EF6;" class="headerlink" title="&#x8F6F;&#x4EF6;"></a><strong><a href="http://linuxtoy.org" target="_blank" rel="external">&#x8F6F;&#x4EF6;</a></strong></h2><ul>
+<li>mitmproxy</li>
+<li>zsh</li>
+<li>screen</li>
+<li>iptraf</li>
+<li>htop</li>
+<li>vim</li>
+<li>wps</li>
+<li>nmap</li>
+<li>zmap</li>
+<li>ncdu</li>
+<li>duplicity</li>
+<li>ranger</li>
+<li>feh</li>
+<li>Unity Tweak Tool</li>
+<li>glances &#x7528;&#x4E8E;&#x76D1;&#x63A7;&#x7535;&#x8111;&#x4F7F;&#x7528;</li>
+<li>synergy &#x591A;&#x53F0;&#x7535;&#x8111;&#x95F4;&#x5171;&#x4EAB;&#x952E;&#x76D8;&#xFF0C;&#x9F20;&#x6807;</li>
+<li>Slack</li>
 </ul>
-<h2 id="Gitlab&#x4F7F;&#x7528;"><a href="#Gitlab&#x4F7F;&#x7528;" class="headerlink" title="Gitlab&#x4F7F;&#x7528;"></a>Gitlab&#x4F7F;&#x7528;</h2><h3 id="&#x751F;&#x6210;SSH-KEY"><a href="#&#x751F;&#x6210;SSH-KEY" class="headerlink" title="&#x751F;&#x6210;SSH KEY"></a><span id="ssh_use">&#x751F;&#x6210;SSH KEY</span></h3><ul>
-<li><p>&#x751F;&#x6210;</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;email&quot;</span><br><span class="line">cd ~/.ssh</span><br><span class="line">$ssh-keygen -t rsa -C &quot;email&quot;</span><br></pre></td></tr></table></figure>
-</li>
+<h2 id="Zsh"><a href="#Zsh" class="headerlink" title="Zsh"></a>Zsh</h2><h3 id="&#x5207;&#x6362;zsh"><a href="#&#x5207;&#x6362;zsh" class="headerlink" title="&#x5207;&#x6362;zsh"></a>&#x5207;&#x6362;zsh</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/shells</span><br><span class="line">&#x5207;&#x6362;shell&#x7684;&#x547D;&#x4EE4;</span><br><span class="line">chsh <span class="_">-s</span> /bin/zsh</span><br></pre></td></tr></table></figure>
+<h3 id="&#x4E3B;&#x9898;"><a href="#&#x4E3B;&#x9898;" class="headerlink" title="&#x4E3B;&#x9898;"></a>&#x4E3B;&#x9898;</h3><pre><code>&#x4E3B;&#x9898; https://github.com/robbyrussell/oh-my-zsh
+&#x4F7F;&#x7528;agnoster &#x9700;&#x8981;&#x5148;&#x5B89;&#x88C5;powerline&#x5B57;&#x4F53;(https://github.com/powerline/fonts)
+.zshrc 
+    &#x4F7F;&#x7528;agnoster&#x4E2D;
+    &#x53BB;&#x6389; user@hostname
+    DEFAULT_USER=&quot;zhaoruyang&quot;
+    &#x6216;&#x8005;
+     # redefine prompt_context for hiding user@hostname
+    prompt_context () { }
+
+sudo: &#x65E0;&#x6CD5;&#x89E3;&#x6790;&#x4E3B;&#x673A;&#xFF1A;PentiumRabbit
+[sudo] pentiumrabbit &#x7684;&#x5BC6;&#x7801;&#xFF1A;
+    sudo gedit /etc/hosts
+    127.0.1.1       pentiumrabbit
+</code></pre><h2 id="Terminal-&#x914D;&#x7F6E;"><a href="#Terminal-&#x914D;&#x7F6E;" class="headerlink" title="Terminal &#x914D;&#x7F6E;"></a>Terminal &#x914D;&#x7F6E;</h2><h3 id="Terminal-&#x4F7F;&#x7528;-Solarized-&#x914D;&#x8272;"><a href="#Terminal-&#x4F7F;&#x7528;-Solarized-&#x914D;&#x8272;" class="headerlink" title="Terminal &#x4F7F;&#x7528; Solarized &#x914D;&#x8272;"></a>Terminal &#x4F7F;&#x7528; Solarized &#x914D;&#x8272;</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git://github.com/sigurdga/gnome-terminal-colors-solarized.git</span><br><span class="line"><span class="built_in">cd</span> gnome-terminal-colors-solarized</span><br><span class="line">./solarize</span><br></pre></td></tr></table></figure>
+<h2 id="VIM&#x914D;&#x7F6E;"><a href="#VIM&#x914D;&#x7F6E;" class="headerlink" title="VIM&#x914D;&#x7F6E;"></a>VIM&#x914D;&#x7F6E;</h2><h3 id="&#x63D2;&#x4EF6;"><a href="#&#x63D2;&#x4EF6;" class="headerlink" title="&#x63D2;&#x4EF6;"></a>&#x63D2;&#x4EF6;</h3><ul>
+<li>Taglist</li>
+<li>WinManager</li>
+<li>Vim-airline</li>
+<li>Ctrlp</li>
+<li>Vundle</li>
+<li><strong><a href="http://blog.csdn.net/a936676463/article/details/49619005" target="_blank" rel="external">Ctag</a></strong> </li>
 </ul>
+<h3 id="&#x914D;&#x7F6E;"><a href="#&#x914D;&#x7F6E;" class="headerlink" title="&#x914D;&#x7F6E;"></a>&#x914D;&#x7F6E;</h3><p>.bashrc<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> JAVA_HOME=/usr/lib/jvm/jdk1.8.0_60</span><br><span class="line"><span class="built_in">export</span> JAVA_HOME</span><br><span class="line"><span class="built_in">export</span> JRE_HOME=<span class="variable">${JAVA_HOME}</span>/jre</span><br><span class="line"><span class="built_in">set</span> PATH=<span class="variable">$JAVA_HOME</span>/bin:<span class="variable">$PATH</span></span><br><span class="line"><span class="built_in">export</span> PATH</span><br><span class="line"><span class="built_in">set</span> CLASSPATH=.:<span class="variable">$JAVA_HOME</span>/lib:<span class="variable">${JRE_HOME}</span>/lib</span><br><span class="line"><span class="built_in">export</span> CLASSPATH</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> ANDROID_HOME=/Development/android-sdk-linux</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$ANDROID_HOME</span>/tools:<span class="variable">$ANDROID_HOME</span>/platform-tools:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo subl /etc/profile</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>&#x4E0D;&#x7528;&#x586B;&#x5199;&#x5BC6;&#x7801;&#xFF0C;&#x628A;id_rsa.pub&#x91CC;&#x9762;&#x7684;&#x4E1C;&#x897F;&#x653E;&#x5728;gitlab&#x91CC;</p>
+<p>&#x914D;&#x7F6E;&#x5168;&#x5C40;&#x73AF;&#x5883;&#x53D8;&#x91CF;,&#x7528;&#x4E8E;IDE&#x7684;&#x542F;&#x52A8;&#x5199;&#x5728;&#x8FD9;&#x91CC;</p>
 </blockquote>
-<ul>
-<li><p>&#x6D4B;&#x8BD5;</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>&#x591A;&#x4E2A;SSH&#x914D;&#x7F6E;</p>
-<p>  &#x65B0;&#x5EFA;&#x6587;&#x4EF6;config</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">vim config</span><br></pre></td></tr></table></figure>
-<p>  &#x914D;&#x7F6E;</p>
-  <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitlab</span></span><br><span class="line"><span class="comment">#Host 192.168.85.96</span></span><br><span class="line"><span class="comment">#   HostName 192.168.85.96</span></span><br><span class="line"><span class="comment">#   PreferredAuthentications publickey</span></span><br><span class="line"><span class="comment">#   IdentityFile ~/.ssh/id_rsa</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#  chinaos</span></span><br><span class="line">Host git.oschina.net</span><br><span class="line">HostName git.oschina.net</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/chinaos</span></span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/home/zhaoruyang/Development/jdk1.8.0_66  </span><br><span class="line"><span class="built_in">export</span> JRE_HOME=<span class="variable">${JAVA_HOME}</span>/jre  </span><br><span class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">${JAVA_HOME}</span>/lib:<span class="variable">${JRE_HOME}</span>/lib  </span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">${JAVA_HOME}</span>/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
+<h2 id="Theme"><a href="#Theme" class="headerlink" title="Theme"></a>Theme</h2><ul>
+<li><strong><a href="http://tieba.baidu.com/p/4139295367" target="_blank" rel="external">stylishdark</a></strong> </li>
 </ul>
-<h3 id="&#x7BA1;&#x7406;&#x8005;"><a href="#&#x7BA1;&#x7406;&#x8005;" class="headerlink" title="&#x7BA1;&#x7406;&#x8005;"></a>&#x7BA1;&#x7406;&#x8005;</h3><ul>
-<li><p>&#x521B;&#x5EFA;&#x9879;&#x76EE;<br>gitlab-&gt;New Project-&gt;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x56E2;&#x961F;&#xFF0C;&#x6216;&#x4E2A;&#x4EBA;&#xFF08;&#x7B2C;&#x4E00;&#x4E2A;&#x7A7A;&#xFF09;</p>
-</li>
-<li><p><a href="#git_use">&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;</a></p>
-</li>
-<li><p>&#x8BBE;&#x7F6E;&#x5206;&#x652F;&#x4E3A;&#x53D7;&#x4FDD;&#x62A4;&#x7684;&#x5206;&#x652F;&#xFF08;&#x5373;&#x9664;&#x4E86;&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x5176;&#x4ED6;&#x4EBA;&#x4E0D;&#x5141;&#x8BB8;&#x63D0;&#x4EA4;&#x4EE3;&#x7801;&#xFF09;<br>Projects-&gt;&#x70B9;&#x51FB;&#x76F8;&#x5E94;&#x7684;&#x9879;&#x76EE;-&gt;Settingss(&#x5DE6;&#x4FA7;)-&gt;Protected branches</p>
-</li>
-<li><p>&#x7533;&#x8BF7;&#x4E0E;&#x4E3B;&#x679D;&#x5408;&#x5E76;&#x65F6;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x5148;&#x672C;&#x5730;&#x5408;&#x5E76;&#xFF0C;push&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x5206;&#x652F;&#x91CC;&#xFF0C;&#x518D;&#x53BB;&#x7533;&#x8BF7;</p>
-</li>
-<li><p>&#x6DFB;&#x52A0;&#x9879;&#x76EE;&#x6210;&#x5458;<br>Projects-&gt;&#x70B9;&#x51FB;&#x76F8;&#x5E94;&#x7684;&#x9879;&#x76EE;-&gt;Members(&#x5DE6;&#x4FA7;)</p>
-</li>
-<li><p>&#x5904;&#x7406;&#x5408;&#x5E76;&#x8BF7;&#x6C42;<br>Projects-&gt;&#x70B9;&#x51FB;&#x76F8;&#x5E94;&#x7684;&#x9879;&#x76EE;-&gt;Merge Requests(&#x5DE6;&#x4FA7;)</p>
-</li>
-</ul>
-<h3 id="&#x5F00;&#x53D1;&#x8005;"><a href="#&#x5F00;&#x53D1;&#x8005;" class="headerlink" title="&#x5F00;&#x53D1;&#x8005;"></a>&#x5F00;&#x53D1;&#x8005;</h3><ul>
-<li><p>&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;&#xFF0C;&#x9700;&#x8981;&#x4E0A;&#x4F20;&#x81EA;&#x5DF1;&#x7684;<a href="#ssh_use">SSH</a><br>Gitlab-&gt;Profile Settings-&gt;SSH Keys-&gt;Add an SSH Key</p>
-</li>
-<li><p>&#x6D41;&#x7A0B;<br>fork&#x4EE3;&#x7801;-&gt;&#x751F;&#x6210;&#x81EA;&#x5DF1;&#x7684;&#x5E93;&#x2014;&gt;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x8FD9;&#x4E2A;&#x5E93;&#x4E0A;&#x5F00;&#x53D1;&#xFF0C;&#x81EA;&#x5DF1;&#x7684;&#x72EC;&#x7ACB;&#x529F;&#x80FD;-&gt;&#x63D0;&#x4EA4;&#x81EA;&#x5DF1;&#x7684;fork&#x7684;&#x4EE3;&#x7801;&#x5E93;&#x4E2D;-&gt;&#x529F;&#x80FD;&#x5B8C;&#x6210;-&gt;&#x7533;&#x8BF7;&#x5408;&#x5E76;&#x5230;&#x4E3B;&#x679D;</p>
-</li>
-<li><p>&#x7533;&#x8BF7;&#x5408;&#x5E76;&#x4EE3;&#x7801;<br>Projects-&gt;&#x70B9;&#x51FB;&#x76F8;&#x5E94;&#x7684;&#x9879;&#x76EE;-&gt;Merge Requests(&#x5DE6;&#x4FA7;)-&gt;New Merge<br>Request-&gt;&#x73B0;&#x5728;&#x8981;&#x63D0;&#x4EA4;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x4EE5;&#x53CA;&#x76EE;&#x6807;&#x5206;&#x652F;</p>
-<blockquote>
-<p>&#x7533;&#x8BF7;&#x5408;&#x5E76;&#x4EE3;&#x7801;&#x4E4B;&#x524D;&#xFF0C;&#x81EA;&#x5DF1;&#x5148;&#x5728;&#x672C;&#x5730;&#x5408;&#x5E76;&#x4EE3;&#x7801;&#xFF0C;&#x4E0E;&#x6E90;&#x5E93;&#x540C;&#x6B65;&#xFF0C;&#x89E3;&#x51B3;&#x51B2;&#x7A81;</p>
+<h2 id="&#x95EE;&#x9898;&#x89E3;&#x51B3;"><a href="#&#x95EE;&#x9898;&#x89E3;&#x51B3;" class="headerlink" title="&#x95EE;&#x9898;&#x89E3;&#x51B3;"></a>&#x95EE;&#x9898;&#x89E3;&#x51B3;</h2><ul>
+<li>Android &#x9879;&#x76EE;&#x4E0D;&#x80FD;&#x8FD0;&#x884C;&#x95EE;&#x9898;<blockquote>
+<p>&#x56E0;&#x4E3A;&#x7F3A;&#x5C11;32&#x8FD0;&#x884C;&#x73AF;&#x5883;</p>
 </blockquote>
 </li>
-<li><p>fork&#x4EE3;&#x7801;&#xFF0C;&#x6216;&#x8005;&#x5F00;&#x542F;&#x5206;&#x652F;</p>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install lib32z1</span><br><span class="line">sudo apt-get install lib32stdc++6</span><br></pre></td></tr></table></figure>
 <ul>
-<li>&#x7531;&#x4E8E;&#x4E3B;&#x679D;&#x4EE3;&#x7801;&#x53D7;&#x4FDD;&#x62A4;&#xFF0C;&#x6240;&#x4EE5;&#x4F7F;&#x7528;&#x8005;&#x5FC5;&#x987B;&#x7ECF;&#x8FC7;&#x8FD9;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;&#x5F00;&#x53D1;&#x4EE3;&#x7801;,&#x5F53;&#x5F00;&#x53D1;&#x8005;&#x63D0;&#x4EA4;&#x4EE3;&#x7801;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x7ECF;&#x8FC7;&#x4E3B;&#x679D;&#x7BA1;&#x7406;&#x5458;&#x540C;&#x610F;&#xFF0C;&#x4EE5;&#x8FBE;&#x5230;review&#x6548;&#x679C;</li>
-<li>&#x533A;&#x522B;&#xFF1A;fork&#x51FA;&#x6765;&#x7684;&#x4EE3;&#x7801;&#x4F4D;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x4ED3;&#x5E93;&#xFF0C;&#x5176;&#x5B9E;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#xFF0C;&#x53EA;&#x662F;&#x4F4D;&#x7F6E;&#x4E0D;&#x540C;&#xFF0C;&#x6240;&#x6709;&#x8005;&#x4E0D;&#x540C;</li>
-<li><p>&#x5982;&#x679C;fork&#x51FA;&#x6765;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x8981;&#x540C;&#x6B65;&#x539F;&#x5E93;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream git@192.168.85.96:android/TextAndroid.git</span><br></pre></td></tr></table></figure>
-<p>&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x5728;studio&#x4E2D;&#xFF0C;Git-&gt;pull-&gt;&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684;Remote-&gt;pull &#x4E0B;&#x62C9;&#x4E0B;&#x6765;&#xFF0C;&#x7136;&#x540E;&#x5408;&#x5E76;&#x4E86;&#xFF0C;&#x5408;&#x5E76;&#x540E;&#x9700;&#x8981;push&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x4ED3;&#x5E93;&#x91CC;&#xFF0C;&#x7136;&#x540E;&#x5728;gitlab&#x53D1;&#x8D77;Merge Requests<br>Projects-&gt;&#x70B9;&#x51FB;&#x76F8;&#x5E94;&#x7684;&#x9879;&#x76EE;-&gt;&#x53F3;&#x4FA7;Fork</p>
+<li><p><strong><a href="http://www.linuxidc.com/Linux/2014-05/101565.htm" target="_blank" rel="external">&#x6EDA;&#x52A8;&#x6761;</a></strong> </p>
+</li>
+<li><p><strong><a href="http://www.cnblogs.com/no7dw/archive/2012/10/09/2717289.html" target="_blank" rel="external">&#x89E3;&#x51B3;ADB &#x95EE;&#x53F7;&#x7684;&#x95EE;&#x9898;</a></strong> </p>
+</li>
+<li><p><strong><a href="http://blog.csdn.net/lincyang/article/details/42024565" target="_blank" rel="external">&#x914D;&#x7F6E;JDK</a></strong> </p>
+</li>
+<li><p><strong><a href="https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit" target="_blank" rel="external">IDEA &#x52A0;&#x901F;</a></strong></p>
+</li>
+<li><p><strong><a href="http://www.cnblogs.com/xiaotuni/archive/2010/03/25/2365689.html" target="_blank" rel="external">&#x6DFB;&#x52A0;&#x6216;&#x5220;&#x9664;&#x4EA4;&#x6362;&#x5206;&#x533A;</a></strong></p>
 </li>
 </ul>
+<h2 id="&#x6280;&#x5DE7;"><a href="#&#x6280;&#x5DE7;" class="headerlink" title="&#x6280;&#x5DE7;"></a>&#x6280;&#x5DE7;</h2><ul>
+<li><p>&#x4F7F;&#x7528;Cron&#x7684;&#x60C5;&#x51B5;&#x8C03;&#x5EA6;Linux&#x4E0B;&#x7684;&#x4EFB;&#x52A1;</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">while</span> <span class="literal">true</span>; <span class="keyword">do</span> date &gt;&gt; date.txt ; sleep 5 ; <span class="keyword">done</span> &amp;</span><br></pre></td></tr></table></figure>
+<p>  &#x4E0A;&#x8FF0;&#x811A;&#x672C;&#x7684;&#x89E3;&#x91CA;&#xFF1A;</p>
+<ul>
+<li>while true &#xFF1A;&#x8BA9;&#x811A;&#x672C;&#x8FDB;&#x5165;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x603B;&#x4E3A;&#x771F;&#x7684;&#x5FAA;&#x73AF;&#x4E2D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5236;&#x9020;&#x4E00;&#x4E2A;&#x6B7B;&#x5FAA;&#x73AF;&#xFF0C;&#x5C06;&#x91CC;&#x8FB9;&#x7684;&#x547D;&#x4EE4;&#x4E00;&#x904D;&#x904D;&#x5730;&#x91CD;&#x590D;&#x8FD0;&#x884C;&#x3002;</li>
+<li>do &#xFF1A;do&#x662F;while&#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5B83;&#x4E4B;&#x540E;&#x7684;&#x547D;&#x4EE4;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x5728;&#x5B83;&#x540E;&#x8FB9;&#x53EF;&#x4EE5;&#x653E;&#x7F6E;&#x4E00;&#x4E2A;&#x6216;&#x4E00;&#x7CFB;&#x5217;&#x547D;&#x4EE4;&#x3002;</li>
+<li>date &gt;&gt; date.txt &#xFF1A;&#x8FD0;&#x884C;date&#x547D;&#x4EE4;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x8F93;&#x51FA;&#x5199;&#x5165;&#x5230;data.txt&#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x6CE8;&#x610F;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&gt;&gt;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&gt;&#x3002;</li>
+<li>&gt;&gt; &#xFF1A;&#x5BF9;&#x6587;&#x4EF6;&#xFF08;date.txt&#xFF09;&#x8FDB;&#x884C;&#x8FFD;&#x52A0;&#x5199;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x6837;&#x6BCF;&#x6B21;&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#x540E;&#xFF0C;&#x8F93;&#x51FA;&#x5185;&#x5BB9;&#x4F1A;&#x88AB;&#x8FFD;&#x52A0;&#x5230;&#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x7684;&#x8BDD;&#xFF0C;&#x5219;&#x4F1A;&#x4E00;&#x904D;&#x904D;&#x5730;&#x8986;&#x76D6;&#x4E4B;&#x524D;&#x7684;&#x5185;&#x5BB9;&#x3002;</li>
+<li>sleep 5 &#xFF1A;&#x8BA9;&#x811A;&#x672C;&#x5904;&#x4E8E;5&#x79D2;&#x7761;&#x7720;&#x72B6;&#x6001;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x8FD0;&#x884C;&#x4E4B;&#x540E;&#x7684;&#x547D;&#x4EE4;&#x3002;&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x7684;&#x65F6;&#x95F4;&#x5355;&#x4F4D;&#x53EA;&#x80FD;&#x7528;&#x79D2;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8BA9;&#x547D;&#x4EE4;&#x6BCF;6&#x5206;&#x949F;&#x8FD0;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;sleep 360&#x3002;</li>
+<li>done &#xFF1A;while&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x5757;&#x7ED3;&#x675F;&#x7684;&#x6807;&#x8BB0;&#x3002;</li>
+<li>&amp; &#xFF1A;&#x5C06;&#x6574;&#x4E2A;&#x8FDB;&#x7A0B;&#x653E;&#x5230;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x3002;</li>
+</ul>
 </li>
-<li><p>&#x5206;&#x652F;&#x95F4;&#x5207;&#x6362;<br>studio-&gt;Git-&gt;branches-&gt;&#x9009;&#x62E9;&#x60F3;&#x8981;&#x7684;&#x5206;&#x652F;-&gt; checkout</p>
+<li><p>&#x4E0D;&#x4F7F;&#x7528;clear&#x547D;&#x4EE4;&#x6E05;&#x7A7A;&#x7EC8;&#x7AEF;&#x7684;&#x5185;&#x5BB9; ctrl + l</p>
+</li>
+<li><p>&#x5728;&#x5176;&#x5B83;&#x76EE;&#x5F55;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;&#x7136;&#x540E;&#x81EA;&#x52A8;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;<br> &#x53EA;&#x9700;&#x8981;&#x5C06;&#x547D;&#x4EE4;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x5706;&#x62EC;&#x53F7;&#x91CC;&#x3002;</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">avi@deb:~$ (<span class="built_in">cd</span> /home/avi/Downloads/)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>autojump&#x4E00;&#x952E;&#x76F4;&#x8FBE;&#x76EE;&#x5F55;&#x624D;&#x662F;&#x7EC8;&#x6781;&#x795E;&#x5668;&#xFF01;</p>
 </li>
 </ul>
-<h3 id="&#x6D4B;&#x8BD5;&#x4EBA;&#x5458;"><a href="#&#x6D4B;&#x8BD5;&#x4EBA;&#x5458;" class="headerlink" title="&#x6D4B;&#x8BD5;&#x4EBA;&#x5458;"></a>&#x6D4B;&#x8BD5;&#x4EBA;&#x5458;</h3><pre><code>Projects-&gt;&#x70B9;&#x51FB;&#x76F8;&#x5E94;&#x7684;&#x9879;&#x76EE;-&gt;Issues(&#x5DE6;&#x4FA7;)-&gt;New Issuse
-</code></pre><h3 id="&#x5173;&#x4E8E;Review"><a href="#&#x5173;&#x4E8E;Review" class="headerlink" title="&#x5173;&#x4E8E;Review"></a>&#x5173;&#x4E8E;Review</h3><ul>
-<li>&#x9700;&#x8981;&#x7ECF;&#x8FC7;&#x4E24;&#x4E2A;&#x4EBA;&#x76F8;&#x4E92;review</li>
-<li>&#x7ECF;&#x5E38;&#x66F4;&#x65B0;&#x8FDC;&#x7AEF;&#x4EE3;&#x7801;</li>
-<li>&#x7ACB;&#x9879;&#x65F6;&#x6307;&#x5B9A;review&#x5BF9;&#x8C61;&#x3001;</li>
-<li>android&#x89C4;&#x8303;&#xFF0C;&#x6CE8;&#x91CA;&#x7B49;&#x60C5;&#x51B5;</li>
-<li>review&#x7684;&#x4EBA;&#x9700;&#x8981;&#x660E;&#x786E;&#x8868;&#x793A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7684;&#x60C5;&#x51B5;</li>
-<li>bug&#x5FC5;&#x987B;&#x63D0;&#x4EA4;&#x5230;truck&#x4E0A;&#xFF0C;&#x9A8C;&#x8BC1;&#x540E;&#x624D;&#x80FD;&#x6807;&#x8BB0;&#x89E3;&#x51B3;</li>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Git" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/29/Git/" class="article-date">
+  	<time datetime="2016-03-29T10:46:51.727Z" itemprop="datePublished">3月 29 2016</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Git&#x4F7F;&#x7528;"><a href="#Git&#x4F7F;&#x7528;" class="headerlink" title="Git&#x4F7F;&#x7528;"></a>Git&#x4F7F;&#x7528;</h1><h2 id="&#x6807;&#x7B7E;&#xFF08;&#x7A7A;&#x683C;&#x5206;&#x9694;&#xFF09;&#xFF1A;-Git"><a href="#&#x6807;&#x7B7E;&#xFF08;&#x7A7A;&#x683C;&#x5206;&#x9694;&#xFF09;&#xFF1A;-Git" class="headerlink" title="&#x6807;&#x7B7E;&#xFF08;&#x7A7A;&#x683C;&#x5206;&#x9694;&#xFF09;&#xFF1A; Git"></a>&#x6807;&#x7B7E;&#xFF08;&#x7A7A;&#x683C;&#x5206;&#x9694;&#xFF09;&#xFF1A; Git</h2><p>[TOC]</p>
+<h2 id="&#x914D;&#x7F6E;"><a href="#&#x914D;&#x7F6E;" class="headerlink" title="&#x914D;&#x7F6E;"></a>&#x914D;&#x7F6E;</h2><ul>
+<li><p>&#x58F0;&#x660E;</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;email&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>&#x751F;&#x6210;SSH</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">$ssh-keygen -t rsa -C &quot;email&quot; # &#x5982;&#x679C;&#x60F3;&#x751F;&#x6210;&#x591A;&#x4E2A;SSH&#xFF0C;&#x7B2C;&#x4E00;&#x6B65;&#x8BB0;&#x5F97;&#x4FEE;&#x6539;&#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x7684;&#x6587;&#x4EF6;&#x540D;</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h2 id="Git-&#x4F7F;&#x7528;"><a href="#Git-&#x4F7F;&#x7528;" class="headerlink" title="Git &#x4F7F;&#x7528;"></a><span id="git_use">Git &#x4F7F;&#x7528;</span></h2><ol>
+<pre><code>&#x5982;&#x679C;&#x591A;&#x4E2A;SSH
+
+&#x914D;&#x7F6E;
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># gitlab</span><br><span class="line">#Host 192.168.85.96</span><br><span class="line">#   HostName 192.168.85.96</span><br><span class="line">#   PreferredAuthentications publickey</span><br><span class="line">#   IdentityFile ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line">#  chinaos</span><br><span class="line">Host git.oschina.net</span><br><span class="line">HostName git.oschina.net</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/chinaos</span><br></pre></td></tr></table></figure>
+
+- &#x6D4B;&#x8BD5;
+
+    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+</code></pre><h2 id="&#x4F7F;&#x7528;"><a href="#&#x4F7F;&#x7528;" class="headerlink" title="&#x4F7F;&#x7528;"></a>&#x4F7F;&#x7528;</h2><ol>
 <li><p>&#x521D;&#x59CB;&#x5316;&#x4EE3;&#x7801;&#x4ED3;&#x5E93;&#xFF08;repository&#xFF09;&#xFF08;&#x5728;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF09;</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init  </span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;&#x8BC4;&#x8BBA;&quot;</span><br><span class="line">git remote add origin http://git.oschina.net/yourname/helloworld.git</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
 </li>
@@ -396,19 +513,6 @@
 </blockquote>
 </li>
 </ul>
-<h3 id="&#x53C2;&#x8003;"><a href="#&#x53C2;&#x8003;" class="headerlink" title="&#x53C2;&#x8003;"></a>&#x53C2;&#x8003;</h3><ul>
-<li><strong><a href="http://www.tuicool.com/articles/QF3Yb2" target="_blank" rel="external">Gitlab - Pull Request</a></strong></li>
-</ul>
-<h2 id="Gitlab-&#x65E5;&#x5E38;&#x7EF4;&#x62A4;"><a href="#Gitlab-&#x65E5;&#x5E38;&#x7EF4;&#x62A4;" class="headerlink" title="Gitlab &#x65E5;&#x5E38;&#x7EF4;&#x62A4;"></a><a href="http://www.tuicool.com/articles/mUzyAr" target="_blank" rel="external">Gitlab &#x65E5;&#x5E38;&#x7EF4;&#x62A4;</a></h2><h2 id="SVN&#x8F6C;Git"><a href="#SVN&#x8F6C;Git" class="headerlink" title="SVN&#x8F6C;Git"></a>SVN&#x8F6C;Git</h2><h3 id="&#x4F7F;&#x7528;svn2git"><a href="#&#x4F7F;&#x7528;svn2git" class="headerlink" title="&#x4F7F;&#x7528;svn2git"></a>&#x4F7F;&#x7528;svn2git</h3><ul>
-<li><p>&#x8F6C;&#x5316;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git-core git-svn ruby</span><br><span class="line">gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/</span><br><span class="line">gem sources -l</span><br><span class="line">sudo gem install svn2git</span><br><span class="line">svn2git http://192.168.200.222/svn/storm_wireless/android_online/trunk/client/BaofengAndroid/ --notrunk --nobranches --notags --username zhaoruyang</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Push</p>
-<blockquote>
-<p>&#x5148;&#x6DFB;&#x52A0;.gitignore&#x6587;&#x4EF6;&#xFF0C;&#x5220;&#x9664;&#x591A;&#x4F59;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;<code>git commit -m &quot;init&quot;  git add .</code></p>
-</blockquote>
-</li>
-</ul>
 
       
     </div>
@@ -416,10 +520,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gitlab/">Gitlab</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IC/">IC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Issues/">Issues</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/build/">build</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/持续化/">持续化</a></li></ul>
-	</div>
-
       
 
       
@@ -439,11 +539,11 @@
 
 
   
-    <article id="post-Hexo博客搭建" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-common" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/29/Hexo博客搭建/" class="article-date">
-  	<time datetime="2016-03-29T07:33:17.000Z" itemprop="datePublished">3月 29 2016</time>
+      <a href="/2016/03/29/common/" class="article-date">
+  	<time datetime="2016-03-29T10:46:51.727Z" itemprop="datePublished">3月 29 2016</time>
 </a>
     </div>
   
@@ -452,34 +552,37 @@
       <input type="hidden" class="isFancy" />
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/29/Hexo博客搭建/">使用Github搭建Hexo</a>
-    </h1>
-  
-
-      </header>
-      
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="&#x914D;&#x7F6E;"><a href="#&#x914D;&#x7F6E;" class="headerlink" title="&#x914D;&#x7F6E;"></a>&#x914D;&#x7F6E;</h2><ul>
-<li><p>&#x4E0B;&#x8F7D;Node.js</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git://github.com/joyent/node.git </span><br><span class="line"><span class="built_in">cd</span> node </span><br><span class="line">git checkout <span class="comment"># &#x67E5;&#x770B;&#x5206;&#x652F;&#x7248;&#x672C;</span></span><br><span class="line">git checkout v0.4.10 </span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line">sudo chmod 755 -R node</span><br><span class="line"><span class="built_in">cd</span> node </span><br><span class="line">./configure</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br><span class="line">node -v </span><br><span class="line">npm config <span class="built_in">set</span> registry <span class="string">&apos;https://registry.npm.taobao.org &apos;</span></span><br><span class="line">sudo npm install -g hexo</span><br><span class="line"></span><br><span class="line">hexo init &lt;folder&gt;  <span class="comment">#&#x6267;&#x884C;init&#x547D;&#x4EE4;&#x521D;&#x59CB;&#x5316;hexo&#x5230;&#x4F60;&#x6307;&#x5B9A;&#x7684;&#x76EE;&#x5F55;</span></span><br><span class="line">hexo generate       <span class="comment">#&#x81EA;&#x52A8;&#x6839;&#x636E;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x6587;&#x4EF6;,&#x751F;&#x6210;&#x9759;&#x6001;&#x7F51;&#x9875;</span></span><br><span class="line">hexo server         <span class="comment">#&#x8FD0;&#x884C;&#x672C;&#x5730;&#x670D;&#x52A1;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="&#x901A;&#x7528;&#x914D;&#x7F6E;"><a href="#&#x901A;&#x7528;&#x914D;&#x7F6E;" class="headerlink" title="&#x901A;&#x7528;&#x914D;&#x7F6E;"></a>&#x901A;&#x7528;&#x914D;&#x7F6E;</h1><h2 id="Chrome&#x63D2;&#x4EF6;"><a href="#Chrome&#x63D2;&#x4EF6;" class="headerlink" title="Chrome&#x63D2;&#x4EF6;"></a>Chrome&#x63D2;&#x4EF6;</h2><ul>
+<li>Context &#x914D;&#x7F6E;&#x4FDD;&#x5B58;<figure class="highlight d"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eyJ2ZXJzaW9uIjoxLCJjb250ZXh0cyI6W3sibmFtZSI6InNpbXBsZSIsImltZ1NyYyI6Imljb25zL2RvcnRtdW5kL2ZpbmlzaGVkLXdvcmsucG5nIiwiaWNvbiI6InNob3dfY29udGV4dCIsImV4dGVuc2lvbnMiOlt7ImlkIjoia2hwY2FuYmVvamFsYmtwZ3BtanBka2pua2ZjZ2ZraGIiLCJpY29uIjoiY2hyb21lOi8vZXh0ZW5zaW9uLWljb24va2hwY2FuYmVvamFsYmtwZ3BtanBka2pua2ZjZ2ZraGIvNDgvMCJ9LHsiaWQiOiJtY2lpb2dpamVoa2RlbWtsYmRjYmZrZWZpbWlmaGVjbiIsImljb24iOiJjaHJvbWU6Ly9leHRlbnNpb24taWNvbi9tY2lpb2dpamVoa2RlbWtsYmRjYmZrZWZpbWlmaGVjbi8xNi8wIn0seyJpZCI6Im9qbW1uY2VhaWRubW1pbmpqZmZwbmRjYmRpYmVsZ2FtIiwiaWNvbiI6ImNocm9tZTovL2V4dGVuc2lvbi1pY29uL29qbW1uY2VhaWRubW1pbmpqZmZwbmRjYmRpYmVsZ2FtLzE2LzAifSx7ImlkIjoiZnBkbmpkbGJkbWlmb29jZWRoa2lnaGhsYmNoYmlpa2wiLCJpY29uIjoiY2hyb21lOi8vZXh0ZW5zaW9uLWljb24vZnBkbmpkbGJkbWlmb29jZWRoa2lnaGhsYmNoYmlpa2wvNDgvMCJ9XX1dLCJhbHdheXNFbmFibGVkRXh0ZW5zaW9ucyI6W10sImV4dGVuc2lvbnNOYW1lc0RpY3Rpb25hcnkiOnsia2hwY2FuYmVvamFsYmtwZ3BtanBka2pua2ZjZ2ZraGIiOiJDaHJvbWl1bSBXaGVlbCBTbW9vdGggU2Nyb2xsZXIiLCJtY2lpb2dpamVoa2RlbWtsYmRjYmZrZWZpbWlmaGVjbiI6IkNocm9ub+S4i+i9veeuoeeQhuWZqCIsIm9qbW1uY2VhaWRubW1pbmpqZmZwbmRjYmRpYmVsZ2FtIjoiVGhpbiBTY3JvbGwgQmFyIiwiZnBkbmpkbGJkbWlmb29jZWRoa2lnaGhsYmNoYmlpa2wiOiLlub/lkYrnu4jnu5PogIUifSwiYWR2YW5jZWRPcHRpb25zIjp7ImFwcHNTdXBwb3J0IjoiZmFsc2UiLCJuZXdFeHRlbnNpb25BY3Rpb24iOiJhc2siLCJzaG93TG9hZEFsbEJ0biI6InRydWUifX0=</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<pre><code>&#x6D4F;&#x89C8;&#x5668;&#x8F93;&#x5165;http://localhost:4000&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6548;&#x679C;&#x3002;
-
-[npm&#x5B89;&#x88C5;&#x4E00;&#x4E9B;&#x5305;&#x5931;&#x8D25;](https://cnodejs.org/topic/4f9904f9407edba21468f31e)
-</code></pre><ul>
-<li><p><a href="http://www.jianshu.com/p/858ecf233db9" target="_blank" rel="external">&#x4F7F;&#x7528;</a></p>
-</li>
-<li><p><a href="http://www.tuicool.com/articles/umEBVfI" target="_blank" rel="external">&#x4F7F;&#x7528;&#x672C;&#x5730;&#x56FE;&#x7247;</a></p>
-</li>
-<li><a href="http://www.jianshu.com/p/b7886271e21a" target="_blank" rel="external">&#x5934;&#x50CF;&#x7B49;&#x8BBE;&#x7F6E;</a></li>
+<h2 id="Eclipse"><a href="#Eclipse" class="headerlink" title="Eclipse"></a>Eclipse</h2><h4 id="&#x63D2;&#x4EF6;"><a href="#&#x63D2;&#x4EF6;" class="headerlink" title="&#x63D2;&#x4EF6;"></a>&#x63D2;&#x4EF6;</h4><pre><code>* ADT
+&gt; http://dl-ssl.google.com/android/eclipse
+* CDT
+&gt; http://download.eclipse.org/tools/cdt/releases/galileo/
+</code></pre><h2 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h2><h4 id="&#x6E90;&#x7801;&#x4E0B;&#x8F7D;"><a href="#&#x6E90;&#x7801;&#x4E0B;&#x8F7D;" class="headerlink" title="&#x6E90;&#x7801;&#x4E0B;&#x8F7D;"></a><strong><a href="http://www.kaelli.com/9.html" target="_blank" rel="external">&#x6E90;&#x7801;&#x4E0B;&#x8F7D;</a></strong></h4><h4 id="&#x6E90;&#x7801;&#x9605;&#x8BFB;"><a href="#&#x6E90;&#x7801;&#x9605;&#x8BFB;" class="headerlink" title="&#x6E90;&#x7801;&#x9605;&#x8BFB;"></a>&#x6E90;&#x7801;&#x9605;&#x8BFB;</h4><blockquote>
+<p>&#x9700;&#x8981;java1.7&#x7684;&#x73AF;&#x5883;&#x7F16;&#x8BD1;,shell&#x9700;&#x8981;&#x5207;&#x6362;&#x5230;bash&#x4E0B;</p>
+</blockquote>
+<p>&#x5207;&#x6362;shell&#x7684;&#x547D;&#x4EE4;<br><code>chsh -s /bin/bash</code></p>
+<p>&#x9996;&#x5148;&#x9700;&#x8981;&#x5728;android&#x6E90;&#x7801;&#x6839;&#x76EE;&#x5F55;&#x6267;&#x884C;. build/envsetup.sh &#x811A;&#x672C;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;</p>
+<ul>
+<li>m&#xFF1A;&#x7F16;&#x8BD1;&#x6240;&#x6709;&#x7684;&#x6A21;&#x5757; </li>
+<li>mm&#xFF1A;&#x7F16;&#x8BD1;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x8981;&#x6709;Android.mk&#x6587;&#x4EF6; </li>
+<li>mmm&#xFF1A;&#x7F16;&#x8BD1;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x4E0B;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x4E0B;&#x8981;&#x6709;Android.mk&#x6587;&#x4EF6; </li>
 </ul>
+<p>&#x4E0B;&#x9762;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#x8BF4;&#x660E;&#xFF0C;&#x5047;&#x8BBE;&#x6211;&#x8981;&#x7F16;&#x8BD1;android&#x4E0B;&#x7684;\hardware\libhardware_legacy\power&#x6A21;&#x5757;&#xFF0C;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E3A;&#x6E90;&#x7801;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A; </p>
+<ol>
+<li>. build/envsetup.sh </li>
+<li>mmm hardware/libhardware_legacy/power/ </li>
+</ol>
+<p>&#x6216;&#x8005; &#xFF1A; </p>
+<ol>
+<li>. build/envsetup.sh </li>
+<li>cd hardware/libhardware_legacy/power/ </li>
+<li>mm <h4 id="&#x4F7F;&#x7528;Android-Studio&#x67E5;&#x770B;Android-Lollipop&#x6E90;&#x7801;-&#xFF08;open&#xFF09;"><a href="#&#x4F7F;&#x7528;Android-Studio&#x67E5;&#x770B;Android-Lollipop&#x6E90;&#x7801;-&#xFF08;open&#xFF09;" class="headerlink" title="&#x4F7F;&#x7528;Android Studio&#x67E5;&#x770B;Android Lollipop&#x6E90;&#x7801; &#xFF08;open&#xFF09;"></a><strong><a href="http://androidperformance.com/2015/01/16/view-android-source-code-with-androidstudio.html" target="_blank" rel="external">&#x4F7F;&#x7528;Android Studio&#x67E5;&#x770B;Android Lollipop&#x6E90;&#x7801;</a></strong> &#xFF08;open&#xFF09;</h4></li>
+</ol>
 
       
     </div>
@@ -487,10 +590,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Blog/">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-	</div>
-
       
 
       
@@ -510,11 +609,11 @@
 
 
   
-    <article id="post-Ubuntu部署Jenkins-Gradle-Android-自动化打包环境" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-sublimeTextSet" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/29/Ubuntu部署Jenkins-Gradle-Android-自动化打包环境/" class="article-date">
-  	<time datetime="2016-03-29T07:33:17.000Z" itemprop="datePublished">3月 29 2016</time>
+      <a href="/2016/03/29/sublimeTextSet/" class="article-date">
+  	<time datetime="2016-03-29T10:46:51.727Z" itemprop="datePublished">3月 29 2016</time>
 </a>
     </div>
   
@@ -523,171 +622,85 @@
       <input type="hidden" class="isFancy" />
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/29/Ubuntu部署Jenkins-Gradle-Android-自动化打包环境/">Ubuntu部署Jenkins+Gradle+Android 自动化打包环境</a>
-    </h1>
-  
-
-      </header>
-      
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>[TOC]</p>
-<h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x7531;&#x4E8E;&#x9879;&#x76EE;&#x9010;&#x6E10;Gradle&#x5316;&#xFF0C;&#x9700;&#x8981;&#x4E3A;&#x6D4B;&#x8BD5;&#x540C;&#x5B66;&#xFF0C;&#x914D;&#x7F6E;&#x81EA;&#x52A8;&#x5316;&#x6253;&#x5305;&#x73AF;&#x5883;</p>
-<h2 id="&#x76F8;&#x5173;&#x8D44;&#x6E90;"><a href="#&#x76F8;&#x5173;&#x8D44;&#x6E90;" class="headerlink" title="&#x76F8;&#x5173;&#x8D44;&#x6E90;"></a>&#x76F8;&#x5173;&#x8D44;&#x6E90;</h2><ul>
-<li><p>Ubuntu Server(&#x6CA1;&#x9009;&#x7528;Centos&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x5BF9;bantu&#x5C5E;&#x6027;)</p>
-</li>
-<li><p><strong><a href="http://mirrors.hust.edu.cn/apache/tomcat/tomcat-8/v8.0.30/bin/apache-tomcat-8.0.30.tar.gz" target="_blank" rel="external">Tomcat</a></strong></p>
-<blockquote>
-<p>&#x9009;&#x62E9;&#x4F7F;&#x7528;8.0.30&#x7684;&#xFF0C;&#x8BD5;&#x7528;9.0.0,&#x5B58;&#x5728;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7A33;&#x5B9A;&#x70B9;&#x6BD4;&#x8F83;&#x597D;</p>
+        <p>#SublimeText &#x8BBE;&#x7F6E;</p>
+<h2 id="&#x5B89;&#x88C5;Package-Control"><a href="#&#x5B89;&#x88C5;Package-Control" class="headerlink" title="&#x5B89;&#x88C5;Package Control"></a>&#x5B89;&#x88C5;Package Control</h2><pre><code>&#x6309;Ctrl + ` &#x8C03;&#x51FA;console&#xFF0C;&#x7C98;&#x8D34;&#x4E0B;&#x5217;&#x5B89;&#x88C5;&#x4EE3;&#x7801;&#x5230;&#x5E95;&#x90E8;&#x547D;&#x4EE4;&#x884C;&#x5E76;&#x56DE;&#x8F66;&#xFF1A;
+</code></pre><p><strong> &#x9002;&#x7528;&#x4E8E;Sublime Text 2 </strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib2,os;pf=<span class="string">&apos;Package Control.sublime-package&apos;</span>;ipp=sublime.installed_packages_path();os.makedirs(ipp) <span class="keyword">if</span> not os.path.exists(ipp) <span class="keyword">else</span> None;open(os.path.join(ipp,pf),<span class="string">&apos;wb&apos;</span>).write(urllib2.urlopen(<span class="string">&apos;http://sublime.wbond.net/&apos;</span>+pf.replace(<span class="string">&apos; &apos;</span>,<span class="string">&apos;%20&apos;</span>)).read())</span><br></pre></td></tr></table></figure>
+<p><strong> &#x9002;&#x7528;&#x4E8E;Sublime Text 3 </strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request,os;pf=<span class="string">&apos;Package Control.sublime-package&apos;</span>;ipp=sublime.installed_packages_path();urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler()));open(os.path.join(ipp,pf),<span class="string">&apos;wb&apos;</span>).write(urllib.request.urlopen(<span class="string">&apos;http://sublime.wbond.net/&apos;</span>+pf.replace(<span class="string">&apos; &apos;</span>,<span class="string">&apos;%20&apos;</span>)).read())</span><br></pre></td></tr></table></figure></p>
+<p>&#x91CD;&#x542F;Sublime Text&#x3002;&#x5982;&#x679C;&#x5728;Perferences-&gt;Package Settings &#x4E2D;&#x770B;&#x5230;package control&#x8FD9;&#x4E00;&#x9879;&#xFF0C;&#x5219;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x3002;</p>
+<h3 id="Ubuntu&#x4E2D;&#x6587;&#x8F93;&#x5165;&#x95EE;&#x9898;"><a href="#Ubuntu&#x4E2D;&#x6587;&#x8F93;&#x5165;&#x95EE;&#x9898;" class="headerlink" title="Ubuntu&#x4E2D;&#x6587;&#x8F93;&#x5165;&#x95EE;&#x9898;"></a><a href="http://www.jianshu.com/p/bf05fb3a4709" target="_blank" rel="external">Ubuntu&#x4E2D;&#x6587;&#x8F93;&#x5165;&#x95EE;&#x9898;</a></h3><h3 id="&#x7528;Package-Control-&#x5B89;&#x88C5;&#x5176;&#x4ED6;&#x63D2;&#x4EF6;"><a href="#&#x7528;Package-Control-&#x5B89;&#x88C5;&#x5176;&#x4ED6;&#x63D2;&#x4EF6;" class="headerlink" title="&#x7528;Package Control &#x5B89;&#x88C5;&#x5176;&#x4ED6;&#x63D2;&#x4EF6;"></a>&#x7528;Package Control &#x5B89;&#x88C5;&#x5176;&#x4ED6;&#x63D2;&#x4EF6;</h3><blockquote>
+<p>&#x6309;&#x4E0B;Cmd+Shift+P &#x8C03;&#x51FA;&#x547D;&#x4EE4;&#x9762;&#x677F;&#xFF0C;&#x8F93;&#x5165;install&#x5E76;&#x8C03;&#x51FA;Install Package&#x9009;&#x9879;&#x5E76;&#x56DE;&#x8F66;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x5217;&#x8868;&#x4E2D;&#x9009;&#x4E2D;&#x8981;&#x5B89;&#x88C5;&#x7684;&#x63D2;&#x4EF6;&#x3002;</p>
 </blockquote>
-</li>
-<li><p><strong><a href="http://mirrors.hust.edu.cn/apache/tomcat/tomcat-8/v8.0.30/bin/apache-tomcat-8.0.30.tar.gz" target="_blank" rel="external">Jenkins</a></strong></p>
-<blockquote>
-<p>&#x4E0B;&#x8F7D;war&#x7248;&#x672C;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;Tomcat&#x4E2D;&#x4F7F;&#x7528;</p>
-</blockquote>
-</li>
-<li><p>java</p>
-<blockquote>
-<p>&#x91C7;&#x7528;OpenSDK 1.7&#xFF0C;android&#x7CFB;&#x7EDF;&#x57FA;&#x4E8E;&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x66F4;&#x52A0;&#x5408;&#x9002;</p>
-</blockquote>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install openjdk-7-jdk</span><br><span class="line">sudo apt-get install openjdk-7-jre</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p>Android SDK</p>
-<blockquote>
-<p>&#x4E0D;&#x591A;&#x4ECB;&#x7ECD;</p>
-</blockquote>
-</li>
-<li><p>Gradle </p>
-<blockquote>
-<p>&#x7531;&#x4E8E;Jenkins&#x63D2;&#x4EF6;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x4E0B;&#x8F7D;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x8003;&#x8651;&#x79BB;&#x7EBF;&#xFF0C;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x4E00;&#x4E0B;</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x914D;&#x7F6E;"><a href="#&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x914D;&#x7F6E;" class="headerlink" title="&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x914D;&#x7F6E;"></a>&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x914D;&#x7F6E;</h2><ul>
-<li>java</li>
-</ul>
-<ol>
-<li><p>&#x6253;&#x5F00;&#x6587;&#x4EF6;</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo subl /etc/profile</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>&#x4FEE;&#x6539;&#x6587;&#x4EF6;</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/home/../jdk1.8.0_66  </span><br><span class="line"><span class="built_in">export</span> JRE_HOME=<span class="variable">${JAVA_HOME}</span>/jre</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">${JAVA_HOME}</span>/lib:<span class="variable">${JRE_HOME}</span>/lib  </span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">${JAVA_HOME}</span>/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<ul>
-<li>Tomcat</li>
-</ul>
-<ol>
-<li><p>&#x542F;&#x52A8;&#x5728;tomcat/bin/startup.sh&#x4E2D;&#x6DFB;&#x52A0;</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">JAVA_HOME=/home/../jdk1.7.0_80</span><br><span class="line">PATH=<span class="variable">$JAVA_HOME</span>/bin:<span class="variable">$PATH</span></span><br><span class="line">CLASSPATH=.:<span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar</span><br><span class="line">TOMCAT_HOME=/home/../apache-tomcat-8.0.30</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>&#x542F;&#x52A8;</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo sh startup.sh</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<ol>
-<li><p>&#x5173;&#x95ED;</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo sh shutdow.sh</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>&#x81EA;&#x542F;&#x52A8;</p>
-<blockquote>
-<p>&#x5DF2;root&#x8EAB;&#x4EFD;&#x6253;&#x5F00;&#xFF0C;<code>vim /etc/rc.local</code><br>&#x6DFB;&#x52A0;tomcat/bin&#x4E2D;&#x7684;startup.sh&#x5168;&#x8DEF;&#x5F84;</p>
-</blockquote>
-</li>
-</ol>
-<ul>
-<li>jenkens <strong>(&#x5C06;&#x4E0B;&#x8F7D;&#x7684;war&#x5305;&#x653E;&#x5728;webapps&#x4E2D;&#x5373;&#x53EF;)</strong></li>
-</ul>
-<h2 id="Jenkins-&#x914D;&#x7F6E;&#x73AF;&#x5883;"><a href="#Jenkins-&#x914D;&#x7F6E;&#x73AF;&#x5883;" class="headerlink" title="Jenkins &#x914D;&#x7F6E;&#x73AF;&#x5883;"></a>Jenkins &#x914D;&#x7F6E;&#x73AF;&#x5883;</h2><ul>
-<li><p>Jenkins &#x63D2;&#x4EF6;</p>
-<blockquote>
-<p>&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;-&#x7BA1;&#x7406;&#x63D2;&#x4EF6;-&#x53EF;&#x9009;&#x63D2;&#x4EF6;</p>
+<h2 id="&#x5168;&#x5C40;&#x914D;&#x7F6E;"><a href="#&#x5168;&#x5C40;&#x914D;&#x7F6E;" class="headerlink" title="&#x5168;&#x5C40;&#x914D;&#x7F6E;"></a>&#x5168;&#x5C40;&#x914D;&#x7F6E;</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">   {</span><br><span class="line">    <span class="attr">&quot;always_show_minimap_viewport&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;bold_folder_labels&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;color_scheme&quot;</span>: <span class="string">&quot;Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;font_face&quot;</span>: <span class="string">&quot;Ubuntu Mono&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;font_options&quot;</span>:</span><br><span class="line">    [</span><br><span class="line">        <span class="string">&quot;gray_antialias&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">&quot;font_size&quot;</span>: <span class="number">12</span>,</span><br><span class="line">    <span class="attr">&quot;highlight_line&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;highlight_modified_tabs&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;ignored_packages&quot;</span>:</span><br><span class="line">    [</span><br><span class="line">        <span class="string">&quot;Vintage&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">&quot;indent_guide_options&quot;</span>:</span><br><span class="line">    [</span><br><span class="line">        <span class="string">&quot;draw_normal&quot;</span>,</span><br><span class="line">        <span class="string">&quot;draw_active&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">&quot;line_padding_bottom&quot;</span>: <span class="number">3</span>,</span><br><span class="line">    <span class="attr">&quot;line_padding_top&quot;</span>: <span class="number">3</span>,</span><br><span class="line">    <span class="attr">&quot;overlay_scroll_bars&quot;</span>: <span class="string">&quot;enabled&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;theme&quot;</span>: <span class="string">&quot;Material-Theme-Darker.sublime-theme&quot;</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="&#x63D2;&#x4EF6;-Plugins"><a href="#&#x63D2;&#x4EF6;-Plugins" class="headerlink" title="&#x63D2;&#x4EF6; (Plugins)"></a>&#x63D2;&#x4EF6; (Plugins)</h2><blockquote>
+<p>Sublime Text &#x6709;&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684;&#xFF0C;&#x57FA;&#x4E8E;python&#x7684;&#x63D2;&#x4EF6;API&#x3002;Sublime Text&#x63D2;&#x4EF6;&#x4E30;&#x5BCC;</p>
 </blockquote>
 <ul>
-<li>Subversion Plug-in</li>
-<li>Gradle plugin</li>
-<li>Android Emulator Plugin<br>&#x9700;&#x8981;&#x914D;&#x7F6E;Android&#x73AF;&#x5883;</li>
-</ul>
-</li>
-<li><p>Jenkins &#x5168;&#x5C40;&#x914D;&#x7F6E;</p>
+<li><p><strong><a href="https://github.com/spadgos/sublime-jsdocs" target="_blank" rel="external">DocBlockr</a></strong> </p>
 <blockquote>
-<p>&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;-&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;</p>
-</blockquote>
-<ul>
-<li>&#x4E3B;&#x76EE;&#x5F55; <strong>(&#x4FEE;&#x6539;Jenkins&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x7684;&#x4F4D;&#x7F6E;)</strong></li>
-<li>Environment variables <strong>(&#x914D;&#x7F6E;&#x5168;&#x5C40;&#x7CFB;&#x7EDF;&#x53D8;&#x91CF;)</strong></li>
-<li>Android <strong>(&#x914D;&#x7F6E; Android SDK root)</strong></li>
-<li>JDK <strong>(&#x914D;&#x7F6E; JDK root)</strong></li>
-<li>Gradle<blockquote>
-<p>&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x672C;&#x5730;&#x8DEF;&#x5F84;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x7EBF;&#x66F4;&#x65B0;</p>
+<p>DocBlockr&#x4F1A;&#x6210;&#x4E3A;&#x4F60;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x6587;&#x6863;&#x7684;&#x6709;&#x6548;&#x5DE5;&#x5177;&#x3002;&#x5F53;&#x8F93;&#x5165;/**&#x5E76;&#x4E14;&#x6309;&#x4E0B;Tab&#x952E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD9;&#x4E2A;&#x63D2;&#x4EF6;&#x4F1A;&#x81EA;&#x52A8;&#x89E3;&#x6790;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5E76;&#x4E14;&#x4E3A;&#x4F60;&#x51C6;&#x5907;&#x597D;&#x5408;&#x9002;&#x7684;&#x6A21;&#x677F;</p>
 </blockquote>
 </li>
-</ul>
-</li>
-<li><p>&#x65B0;&#x5EFA;&#x9879;&#x76EE;</p>
+<li><p><strong><a href="https://github.com/SublimeText/CTags" target="_blank" rel="external">CTags</a></strong></p>
 <blockquote>
-<p>&#x65B0;&#x5EFA;-&#x540D;&#x79F0;-&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x81EA;&#x7531;&#x98CE;&#x683C;&#x7684;&#x8F6F;&#x4EF6;&#x9879;&#x76EE;-OK</p>
+<p>&#x8BA9;Sublime &#x652F;&#x6301;Ctags<br>&#x9700;&#x8981;&#x6307;&#x5B9A;Ctags&#x8DEF;&#x5F84;&#xFF0C;&#x987A;&#x4FBF;&#x6539;&#x4E00;&#x4E0B;&#x5FEB;&#x6377;&#x952E; </p>
 </blockquote>
-<ul>
-<li>&#x6E90;&#x7801;&#x7BA1;&#x7406;  <strong>(Subversion&#xFF0C;&#x914D;&#x7F6E;&#x76F8;&#x5E94;&#x7684;&#x4EE3;&#x7801;&#x8DEF;&#x5F84;)</strong></li>
-<li><p>&#x6784;&#x5EFA;</p>
+</li>
+<li><p><strong><a href="https://github.com/BoundInCode/AutoFileName" target="_blank" rel="external">AutoFileName</a></strong></p>
 <blockquote>
-<p>&#x589E;&#x52A0;&#x6784;&#x5EFA;&#x6B65;&#x9AA4;-Invoke Gradle script</p>
+<p>&#x81EA;&#x52A8;&#x8865;&#x5168;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x3002;</p>
 </blockquote>
-<ol>
-<li>Invoke Gradle <strong>(&#x9009;&#x62E9;&#x4E00;&#x4E2A;Gradle Version)</strong></li>
-<li>Tasks<br> <code>clean assembleRelease --stacktrace --debug</code></li>
-</ol>
+</li>
+<li><p><strong><a href="https://github.com/SublimeLinter/SublimeLinter3" target="_blank" rel="external">SublimeLinter3</a></strong> </p>
 <blockquote>
-<p>&#x589E;&#x52A0;&#x6784;&#x5EFA;&#x6B65;&#x9AA4;-Execute shell(&#x4E3A;&#x4E86;&#x5C06;&#x751F;&#x6210;&#x7684;apk&#xFF0C;&#x62F7;&#x8D1D;&#x5230;&#x5171;&#x4EAB;&#x6587;&#x4EF6;&#x5939;&#x4E0B;)<br><code>export BaoFengAndroid_DATE=$(date +&quot;%Y%m%d%H%M&quot;)
-mkdir -p /home/android/share/app/jenkins/BaoFengAndroid/$BaoFengAndroid_DATE
-cp ${WORKSPACE}/BaofengAndroid/build/outputs/apk/* /home/android/share/app/jenkins/BaoFengAndroid/$BaoFengAndroid_DATE
-cp -r ${WORKSPACE}/BaofengAndroid/build/outputs/mapping/* /home/android/share/app/jenkins/BaoFengAndroid/$BaoFengAndroid_DATE</code></p>
+<p>&#x884C;&#x5185;&#x8BED;&#x6CD5;&#x68C0;&#x6D4B;&#x63D2;&#x4EF6;&#xFF0C;&#x652F;&#x6301;&#xFF1A; C/C++, Java, Python, PHP, JS, HTML, CSS, etc.</p>
 </blockquote>
 </li>
-</ul>
-</li>
-</ul>
-<h2 id="build-gradle&#x914D;&#x7F6E;&#x8BF4;&#x660E;"><a href="#build-gradle&#x914D;&#x7F6E;&#x8BF4;&#x660E;" class="headerlink" title="build.gradle&#x914D;&#x7F6E;&#x8BF4;&#x660E;"></a>build.gradle&#x914D;&#x7F6E;&#x8BF4;&#x660E;</h2><blockquote>
-<p>&#x8FD9;&#x91CC;&#x53EA;&#x8BF4;keystore&#x7684;&#x5B89;&#x5168;&#x5B58;&#x50A8;</p>
-</blockquote>
-<ol>
-<li>&#x901A;&#x8FC7;&#x8BFB;&#x53D6;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x548C;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x914D;&#x7F6E;&#xFF08;Ubuntu,Windows&#x2026;&#xFF09;&#x5206;&#x79BB;&#xFF0C;&#x4E0D;&#x6307;&#x5B9A;&#x56FA;&#x5B9A;&#x8DEF;&#x5F84;</li>
-<li><p>&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728;&#x7CFB;&#x7EDF;&#x4E2D;&#x6DFB;&#x52A0;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x5373;&#x53EF;</p>
-<ul>
-<li><p>build.gradle&#x4E2D;</p>
-  <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">       releaseConfig {</span><br><span class="line">        storeFile file(System.getenv(<span class="string">&quot;KeyStorePath&quot;</span>))</span><br><span class="line">        storePassword System.getenv(<span class="string">&quot;storePassword&quot;</span>)</span><br><span class="line">        keyAlias System.getenv(<span class="string">&quot;keyAlias&quot;</span>)</span><br><span class="line">        keyPassword System.getenv(<span class="string">&quot;keyPassword&quot;</span>)</span><br><span class="line">        }</span><br><span class="line">    ```    </span><br><span class="line"></span><br><span class="line">* Ubuntu&#x914D;&#x7F6E; **(&#x6587;&#x4EF6;<span class="regexp">/etc/</span>profile)**</span><br><span class="line"></span><br><span class="line">    ```bash</span><br><span class="line">    export KeyStorePath=...</span><br><span class="line">    export storePassword=...</span><br><span class="line">    export keyAlias=...</span><br><span class="line">    export keyPassword=...</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Windows&#x4E2D;&#xFF0C;&#x914D;&#x7F6E;&#x5B8C;&#x9700;&#x8981;&#x91CD;&#x542F;</p>
-</li>
-<li><p>Jenkins&#x4E2D;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x914D;&#x7F6E;</p>
+<li><p><strong><a href="http://wbond.net/sublime_packages/alignment" target="_blank" rel="external">Alignment</a></strong> </p>
 <blockquote>
-<p>&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;-&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;-&#x5168;&#x5C40;&#x5C5E;&#x6027;-Environment variables &#x6DFB;&#x52A0;&#x76F8;&#x5E94;&#x7684;&#x952E;&#x503C;&#x5BF9;&#x5373;&#x53EF;</p>
+<p>&#x7B80;&#x5355;&#x5230;&#x6781;&#x81F4;&#x7684;&#x591A;&#x884C;&#x9009;&#x62E9;&#x548C;&#x591A;&#x884C;&#x9009;&#x62E9;&#x5BF9;&#x9F50;&#x63D2;&#x4EF6;</p>
 </blockquote>
-<h2 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="headerlink" title="&#x6CE8;&#x610F;&#x4E8B;&#x9879;"></a>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h2></li>
+</li>
+<li><p>Local History</p>
+</li>
+<li>BracketHighlight</li>
+<li>DocBlockr</li>
+<li>SublimeREPL</li>
+<li>IMESupport</li>
+<li>PlainTasks</li>
+<li>MarkdownEditing</li>
+<li>SublimeGit</li>
+<li>orgmode</li>
+<li><strong><a href="http://www.jianshu.com/p/e92a52770832" target="_blank" rel="external">PlantUML</a></strong> <blockquote>
+<p>UML&#x753B;&#x56FE;&#x5DE5;&#x5177;<br><strong><a href="http://archive.3zso.com/archives/plantuml-quickstart.html" target="_blank" rel="external">&#x8BED;&#x6CD5;&#x4ECB;&#x7ECD;</a></strong></p>
+</blockquote>
+</li>
+<li>SideBarEnhancements</li>
+<li>Sublimall &#x540C;&#x6B65;Sublime Text&#x7F16;&#x8F91;&#x5668;&#x4E4B;&#x95F4;&#x6240;&#x6709;&#x914D;&#x7F6E;,(&#x7B80;&#x5355;&#x7684;&#x66FF;&#x4EE3;&#x54C1;&#x662F;BufferScroll)</li>
+<li>AllAutocomplete</li>
+<li>AutoFileName &#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
+<li>SideBarFolders &#x7BA1;&#x7406;&#x6587;&#x4EF6;&#x5939;</li>
+<li><p>WakaTime &#x7BA1;&#x7406;&#x4F60;&#x7684;coding&#x65F6;&#x95F4;</p>
+<pre><code>1. &#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x8BBE;&#x7F6E;&#x81EA;&#x5DF1;&#x7684;&#x5168;&#x5C40;&#x4FE1;&#x606F;
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;username&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;username@email.com&quot;</span></span><br></pre></td></tr></table></figure>
+<pre><code>2. ctrl+shift+p&#x6253;&#x5F00;Package Control&#xFF0C;&#x5728;&#x91CC;&#x9762;&#x8F93;&#x5165;git&#x547D;&#x4EE4;&#x5373;&#x53EF;
+</code></pre></li>
 </ul>
-<ul>
-<li>&#x4E0D;&#x8981;&#x63D0;&#x4EA4;local.properties&#x6587;&#x4EF6;</li>
-<li><p>&#x6587;&#x4EF6;&#x8F93;&#x51FA;&#x8DEF;&#x5F84; ./BaofengAndroid/build/outputs/apk &#x6587;&#x4EF6;&#x5939;&#x4E2D;</p>
-<h2 id="&#x5730;&#x5740;"><a href="#&#x5730;&#x5740;" class="headerlink" title="&#x5730;&#x5740;"></a>&#x5730;&#x5740;</h2></li>
-<li>&#x53D6;&#x5305;&#x5730;&#x5740;<blockquote>
-<p>//192.168.85.96/share/app/</p>
-</blockquote>
-</li>
-<li>Jenkins&#x5730;&#x5740;<blockquote>
-<p>192.168.85.96:8080/jenkins</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ol>
+<h2 id="&#x4E3B;&#x9898;-Theme"><a href="#&#x4E3B;&#x9898;-Theme" class="headerlink" title="&#x4E3B;&#x9898; (Theme)"></a>&#x4E3B;&#x9898; (Theme)</h2><p><a href="https://sublime.wbond.net/browse/labels/theme" target="_blank" rel="external">Sublime Text&#x6709;&#x5927;&#x91CF;&#x7B2C;&#x4E09;&#x65B9;&#x4E3B;&#x9898;</a></p>
+<p><a href="https://github.com/YabataDesign/afterglow-theme" target="_blank" rel="external">Afterglow</a></p>
+<p><img src="https://github.com/liveNo/Sublime-Tutorial/raw/master/Screenshots/D4CD1C6C-F456-4EB3-BD17-7EFA58D5AA54.png" alt="&#x56FE;&#x7247;"></p>
+<p><a href="https://github.com/equinusocio/material-theme" target="_blank" rel="external">Material</a></p>
+<p><img src="https://github.com/liveNo/Sublime-Tutorial/raw/master/Screenshots/material-theme.png" alt="&#x56FE;&#x7247;"></p>
+<p><a href="https://sublime.wbond.net/packages/Theme%20-%20Soda" target="_blank" rel="external">Soda</a></p>
+<p><img src="http://i.imgur.com/exxgbm1.png" alt="&#x56FE;&#x7247;"><br><img src="http://i.imgur.com/YsrCJMe.png" alt="&#x56FE;&#x7247;"></p>
+<p><a href="https://sublime.wbond.net/packages/Theme%20-%20Nexus" target="_blank" rel="external">Nexus</a></p>
+<p><img src="http://i.imgur.com/ECLGEWD.png" alt="&#x56FE;&#x7247;"></p>
+<p><a href="https://sublime.wbond.net/packages/Theme%20-%20Flatland" target="_blank" rel="external">Flatland</a></p>
+<p><img src="http://i.imgur.com/LT0AyhR.png" alt="&#x56FE;&#x7247;"></p>
+<p><a href="https://sublime.wbond.net/packages/Theme%20-%20Spacegray" target="_blank" rel="external">Spacegray</a></p>
+<p><img src="http://i.imgur.com/j0hJqeV.png" alt="&#x56FE;&#x7247;"><br><img src="http://i.imgur.com/CJJhvTj.png" alt="&#x56FE;&#x7247;"></p>
 
       
     </div>
@@ -695,10 +708,6 @@ cp -r ${WORKSPACE}/BaofengAndroid/build/outputs/mapping/* /home/android/share/ap
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gradle/">Gradle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Jenkins/">Jenkins</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/自动化/">自动化</a></li></ul>
-	</div>
-
       
 
       
@@ -718,6 +727,10 @@ cp -r ${WORKSPACE}/BaofengAndroid/build/outputs/mapping/* /home/android/share/ap
 
 
   
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 </div>
       <footer id="footer">
