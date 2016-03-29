@@ -79,7 +79,7 @@
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -201,6 +201,201 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-Jenkins+Gradle持续化集成" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/29/Jenkins+Gradle持续化集成/" class="article-date">
+  	<time datetime="2016-03-29T07:29:03.166Z" itemprop="datePublished">2016-03-29</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Ubuntu部署Jenkins-Gradle-Android-自动化打包环境"><a href="#Ubuntu部署Jenkins-Gradle-Android-自动化打包环境" class="headerlink" title="Ubuntu部署Jenkins+Gradle+Android 自动化打包环境"></a>Ubuntu部署Jenkins+Gradle+Android 自动化打包环境</h1><p>标签（空格分隔）： Jenkins Gradle Android 自动化 Ubuntu</p>
+<hr>
+<p>[TOC]</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于项目逐渐Gradle化，需要为测试同学，配置自动化打包环境</p>
+<h2 id="相关资源"><a href="#相关资源" class="headerlink" title="相关资源"></a>相关资源</h2><ul>
+<li><p>Ubuntu Server(没选用Centos，是因为我对bantu属性)</p>
+</li>
+<li><p><strong><a href="http://mirrors.hust.edu.cn/apache/tomcat/tomcat-8/v8.0.30/bin/apache-tomcat-8.0.30.tar.gz" target="_blank" rel="external">Tomcat</a></strong></p>
+<blockquote>
+<p>选择使用8.0.30的，试用9.0.0,存在一些问题，服务器，稳定点比较好</p>
+</blockquote>
+</li>
+<li><p><strong><a href="http://mirrors.hust.edu.cn/apache/tomcat/tomcat-8/v8.0.30/bin/apache-tomcat-8.0.30.tar.gz" target="_blank" rel="external">Jenkins</a></strong></p>
+<blockquote>
+<p>下载war版本的，可以直接在Tomcat中使用</p>
+</blockquote>
+</li>
+<li><p>java</p>
+<blockquote>
+<p>采用OpenSDK 1.7，android系统基于这个版本，更加合适</p>
+</blockquote>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install openjdk-7-jdk</span><br><span class="line">sudo apt-get install openjdk-7-jre</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>Android SDK</p>
+<blockquote>
+<p>不多介绍</p>
+</blockquote>
+</li>
+<li><p>Gradle </p>
+<blockquote>
+<p>由于Jenkins插件中，可以自动下载，所以可以不用下，如果考虑离线，可以配置一下</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="系统环境配置"><a href="#系统环境配置" class="headerlink" title="系统环境配置"></a>系统环境配置</h2><ul>
+<li>java</li>
+</ul>
+<ol>
+<li><p>打开文件</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo subl /etc/profile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改文件</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/home/../jdk1.8.0_66  </span><br><span class="line"><span class="built_in">export</span> JRE_HOME=<span class="variable">$&#123;JAVA_HOME&#125;</span>/jre</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$&#123;JAVA_HOME&#125;</span>/lib:<span class="variable">$&#123;JRE_HOME&#125;</span>/lib  </span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$&#123;JAVA_HOME&#125;</span>/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>Tomcat</li>
+</ul>
+<ol>
+<li><p>启动在tomcat/bin/startup.sh中添加</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">JAVA_HOME=/home/../jdk1.7.0_80</span><br><span class="line">PATH=<span class="variable">$JAVA_HOME</span>/bin:<span class="variable">$PATH</span></span><br><span class="line">CLASSPATH=.:<span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar</span><br><span class="line">TOMCAT_HOME=/home/../apache-tomcat-8.0.30</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo sh startup.sh</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol>
+<li><p>关闭</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo sh shutdow.sh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>自启动</p>
+<blockquote>
+<p>已root身份打开，<code>vim /etc/rc.local</code><br>添加tomcat/bin中的startup.sh全路径</p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li>jenkens <strong>(将下载的war包放在webapps中即可)</strong></li>
+</ul>
+<h2 id="Jenkins-配置环境"><a href="#Jenkins-配置环境" class="headerlink" title="Jenkins 配置环境"></a>Jenkins 配置环境</h2><ul>
+<li><p>Jenkins 插件</p>
+<blockquote>
+<p>系统管理-管理插件-可选插件</p>
+</blockquote>
+<ul>
+<li>Subversion Plug-in</li>
+<li>Gradle plugin</li>
+<li>Android Emulator Plugin<br>需要配置Android环境</li>
+</ul>
+</li>
+<li><p>Jenkins 全局配置</p>
+<blockquote>
+<p>系统管理-系统设置</p>
+</blockquote>
+<ul>
+<li>主目录 <strong>(修改Jenkins工作空间的位置)</strong></li>
+<li>Environment variables <strong>(配置全局系统变量)</strong></li>
+<li>Android <strong>(配置 Android SDK root)</strong></li>
+<li>JDK <strong>(配置 JDK root)</strong></li>
+<li>Gradle<blockquote>
+<p>可以指定本地路径，也可以在线更新</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>新建项目</p>
+<blockquote>
+<p>新建-名称-构建一个自由风格的软件项目-OK</p>
+</blockquote>
+<ul>
+<li>源码管理  <strong>(Subversion，配置相应的代码路径)</strong></li>
+<li><p>构建</p>
+<blockquote>
+<p>增加构建步骤-Invoke Gradle script</p>
+</blockquote>
+<ol>
+<li>Invoke Gradle <strong>(选择一个Gradle Version)</strong></li>
+<li>Tasks<br> <code>clean assembleRelease --stacktrace --debug</code></li>
+</ol>
+<blockquote>
+<p>增加构建步骤-Execute shell(为了将生成的apk，拷贝到共享文件夹下)<br><code>export BaoFengAndroid_DATE=$(date +&quot;%Y%m%d%H%M&quot;)
+mkdir -p /home/android/share/app/jenkins/BaoFengAndroid/$BaoFengAndroid_DATE
+cp ${WORKSPACE}/BaofengAndroid/build/outputs/apk/* /home/android/share/app/jenkins/BaoFengAndroid/$BaoFengAndroid_DATE
+cp -r ${WORKSPACE}/BaofengAndroid/build/outputs/mapping/* /home/android/share/app/jenkins/BaoFengAndroid/$BaoFengAndroid_DATE</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="build-gradle配置说明"><a href="#build-gradle配置说明" class="headerlink" title="build.gradle配置说明"></a>build.gradle配置说明</h2><blockquote>
+<p>这里只说keystore的安全存储</p>
+</blockquote>
+<ol>
+<li>通过读取系统环境变量，实现代码和系统环境配置（Ubuntu,Windows…）分离，不指定固定路径</li>
+<li><p>使用时，只需要在系统中添加环境变量即可</p>
+<ul>
+<li><p>build.gradle中</p>
+  <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">       releaseConfig &#123;</span><br><span class="line">        storeFile file(System.getenv(<span class="string">"KeyStorePath"</span>))</span><br><span class="line">        storePassword System.getenv(<span class="string">"storePassword"</span>)</span><br><span class="line">        keyAlias System.getenv(<span class="string">"keyAlias"</span>)</span><br><span class="line">        keyPassword System.getenv(<span class="string">"keyPassword"</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    ```    </span><br><span class="line"></span><br><span class="line">* Ubuntu配置 **(文件<span class="regexp">/etc/</span>profile)**</span><br><span class="line"></span><br><span class="line">    ```bash</span><br><span class="line">    export KeyStorePath=...</span><br><span class="line">    export storePassword=...</span><br><span class="line">    export keyAlias=...</span><br><span class="line">    export keyPassword=...</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Windows中，配置完需要重启</p>
+</li>
+<li><p>Jenkins中环境变量配置</p>
+<blockquote>
+<p>系统管理-系统设置-全局属性-Environment variables 添加相应的键值对即可</p>
+</blockquote>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2></li>
+</ul>
+<ul>
+<li>不要提交local.properties文件</li>
+<li><p>文件输出路径 ./BaofengAndroid/build/outputs/apk 文件夹中</p>
+<h2 id="地址"><a href="#地址" class="headerlink" title="地址"></a>地址</h2></li>
+<li>取包地址<blockquote>
+<p>//192.168.85.96/share/app/</p>
+</blockquote>
+</li>
+<li>Jenkins地址<blockquote>
+<p>192.168.85.96:8080/jenkins</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-Gitlab安装和配置" class="article article-type-post" itemscope itemprop="blogPost">
   
